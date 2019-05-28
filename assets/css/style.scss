@@ -1,30 +1,41 @@
 ---
 ---
 
-/* Universal Styles: */
+/* Styles */
 
-* {
-	box-sizing: border-box;
-}
+// Directories:
+// 1. _layouts --> most general styles, apply to >1 page
+// 2. _nav ------> header, footer styles
+// 3. _pages ----> page-specific styles (docname = page name)
+// 4. _vars -----> Sass variables for colors & font names
 
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "Raleway", sans-serif;
-	font-size: 1em;
-	line-height: 1.5; // if 16px, = 24px line height
-}
+// Imports:
+// - Purpose: puts together all tiny files into big file
+// - Syntax:  '_dir/_filename.scss' -> @import '_dir/filename'
+// - Order:   least-to-most specific, so cascade flows properly
+//            (NB: vars first b/c can't invoke b/f define)
 
-main {
-	padding-top: 60px;
-}
+// vars:
+@import '_vars/colors';
+@import '_vars/fonts';
 
-/* Partials: */
+// layouts:
+@import '_layouts/elements';
+@import '_layouts/default';
+@import '_layouts/general';
 
-@import "_colors/patterns-palette";
-@import "_colors/slab-palette";
-@import "universal-styles";
-@import "page";
-@import "footer";
-@import "navbar";
-//@import "navbar-2";
+// nav:
+@import '_nav/footer';
+@import '_nav/nav';
+@import '_nav/new-nav';
+
+// pages:
+@import '_pages/about';
+@import '_pages/contact';
+@import '_pages/hire-me';
+@import '_pages/home';
+@import '_pages/home-2';
+@import '_pages/intake';
+@import '_pages/new-home';
+@import '_pages/portfolio';
+@import '_pages/site-map';

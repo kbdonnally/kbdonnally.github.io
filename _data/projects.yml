@@ -1,0 +1,74 @@
+# Portfolio project data
+
+- name: Take Back the Archive website
+  order: 2
+  date: Summer/Fall 2017
+  role: Web designer for an administrative timeline, item collections, item details, & more
+  short-role: Web designer on historical timeline & item collections
+  description: >-
+    Take Back the Archive is a public history project to
+    preserve, visualize, and contextualize the history of
+    rape and sexual violence at the University of Virginia.
+  creators:
+    - Lisa Goff
+    - UVA Institute for Public History
+  link: http://takeback.scholarslab.org
+  urls:
+    - main: http://takeback.scholarslab.org
+    - timeline: http://takeback.scholarslab.org/administrative-timeline/
+    - collection: http://takeback.scholarslab.org/collections/show/12 # example collection
+  folder: takeback
+  github:
+    - https://github.com/scholarslab/takeback
+    - https://github.com/kbdonnally/TBTA-timeline
+
+- name: Mapping Lowell website
+  order: 3
+  date: Spring/Summer 2018
+  role: Web design - menu, homepage, *Mapping Lowell* exhibit
+  short-role: Web designer on homepage & interactive historical exhibit
+  description: >-
+    The *Historical Atlas of Lowell* maps the economic,
+    political, social, and cultural history of Lowell,
+    Massachusetts.
+  creators:
+    - Michael Millner
+  link: http://mappinglowell.net
+  urls:
+    - main: http://mappinglowell.net
+    - collection: http://mappinglowell.net/neatline/show/following-the-money
+  folder: lowell
+  github:
+    - https://github.com/kbdonnally/mapping-lowell
+
+- name: Scholars' Lab website redesign
+  order: 1
+  date: Spring/Summer 2018
+  role: Lead designer & information architect on ground-up redesign of organization website
+  short-role: Lead designer
+  description: >-
+    The Scholars' Lab is UVA Library's community lab for the
+    practice of experimental scholarship.
+  creators:
+    - The Scholars' Lab
+  link: http://scholarslab.org
+  folder: slabdotorg
+  github:
+    - https://github.com/scholarslab/scholarslab.org
+
+- name: Puzzle Poesis website
+  order: 4
+  date: Fall 2018
+  role: Web design - interactive Tetris-style top menu
+  short-role: Web designer on Tetris-style menu
+  description: >-
+    UVa's Puzzle Poetry working group aims to treat poems as
+    puzzles, isolate the substance of prosody, and apprehend
+    shape as a medium.
+  creators:
+    - Bradley Pasanek
+    - Neal Curtis
+  link: http://bpasanek.github.io/puzzlepoesis
+  folder: puzzle
+  github:
+    - https://github.com/bpasanek/puzzlepoesis
