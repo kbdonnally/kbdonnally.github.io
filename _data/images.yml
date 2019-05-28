@@ -1,0 +1,85 @@
+# Image data for projects
+# Object names == folder names of screenshots
+# Folder names == property in project YAML
+
+- folder: slabdotorg
+  order: 1
+  pics:
+  - image: 1-home.png
+    caption: none
+    alt: Scholars' Lab homepage
+  - image: 2-mspace.png
+    caption: none
+    alt: Scholars' Lab makerspace page
+  - image: 3-mspacelist.png
+    caption: none
+    alt: Scholars' Lab makerspace inventory list
+  - image: 4-spacetech.png
+    caption: none
+    alt: Scholars' Lab spatial tech page
+  - image: 5-work.png
+    caption: none
+    alt: Scholars' Lab work page
+  - image: 6-blog.png
+    caption: none
+    alt: Scholars' Lab blog
+  - image: 7-events.png
+    caption: none
+    alt: Scholars' Lab events page
+
+- folder: takeback
+  order: 2
+  pics:
+  - image: 1-admin.png
+    caption: none
+    alt: TBTA administrative timeline landing page
+  - image: 2-tlplain.png
+    caption: none
+    alt: TBTA administrative timeline
+  - image: 3-tlclicked.png
+    caption: none
+    alt: TBTA administrative timeline - item focus
+  - image: 4-collxn.png
+    caption: none
+    alt: TBTA collection landing page example
+  - image: 5-stats.png
+    caption: none
+    alt: TBTA collection - statistics section
+  - image: 6-gallery.png
+    caption: none
+    alt: TBTA collection - gallery
+
+- folder: lowell
+  order: 3
+  pics:
+  - image: 1-home.png
+    caption: none
+    alt: Mapping Lowell homepage
+  - image: 2-map.png
+    caption: none
+    alt: Mapping Lowell exhibit
+  - image: 3-mapclicked.png
+    caption: none
+    alt: Mapping Lowell exhibit - item focus
+  - image: 4-text.png
+    caption: none
+    alt: Mapping Lowell homepage - text
+
+- folder: puzzle
+  order: 4
+  pics:
+  - image: 1-bigplain.png
+    caption: none
+    alt: Puzzle Poesis full-size menu
+  - image: 2-med1.png
+    caption: none
+    alt: Puzzle Poesis medium menu
+ # - image: 3-med2.png
+ #   caption: none
+ #   alt: Puzzle Poesis medium menu
+  # - image: 4-small1.png
+   # caption: none
+   # alt: Puzzle Poesis small menu
+  - image: 4-small2.png
+    caption: none
+    alt: Puzzle Poesis small menu
