@@ -2,14 +2,10 @@ if (document.querySelector('.portfolio-wrapper')) {
 	const gallery = document.querySelector('.portfolio__gallery');
 	const button  = document.querySelector('.portfolio-modal__button');
 	let modal 	  = document.querySelector('.portfolio-modal');
-	// touch event handlers
-	var touchGallery = new Hammer(gallery);
-	var touchButton = new Hammer(button);
-	var touchModal = new Hammer(modal);
+	// touch event handler
+	const touchGallery = new Hammer(gallery);
 	
-	touchGallery.on('tap', showModal);
-	touchButton.on('tap', hideModal);
-	touchModal.on('tap', hideModal);
+	touchGallery.on('tap press', showModal);
 
 	gallery.addEventListener('click', showModal);
 	button.addEventListener('click', hideModal);
@@ -18,7 +14,6 @@ if (document.querySelector('.portfolio-wrapper')) {
 
 	function showModal(e) {
 		if (e.target.classList.contains('portfolio-pics__img')) {
-			console.log(e.target);
 			const img 	     = e.target;
 			const src 	     = img.src;
 			const alt 	     = img.alt
