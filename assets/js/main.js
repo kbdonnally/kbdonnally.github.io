@@ -2,6 +2,14 @@ if (document.querySelector('.portfolio-wrapper')) {
 	const gallery = document.querySelector('.portfolio__gallery');
 	const button  = document.querySelector('.portfolio-modal__button');
 	let modal 	  = document.querySelector('.portfolio-modal');
+	// touch event handlers
+	var touchGallery = new Hammer(gallery);
+	var touchButton = new Hammer(button);
+	var touchModal = new Hammer(modal);
+	
+	touchGallery.on('tap', showModal);
+	touchButton.on('tap', hideModal);
+	touchModal.on('tap', hideModal);
 
 	gallery.addEventListener('click', showModal);
 	button.addEventListener('click', hideModal);
