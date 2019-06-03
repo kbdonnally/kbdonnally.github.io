@@ -165,11 +165,11 @@
 /* Metadata: */
 
 .portfolio-item__metadata {
-	
+	color: $halfgray;
 }
 
 .portfolio-meta__title {
-
+	color: $jet;
 }
 
 // ul
@@ -178,10 +178,20 @@
 	padding-left: 0;
 	li {
 		position: relative;
+		display: flex;
+		justify-content: flex-start;
 		// label
 		span:first-of-type {
+			display: block;
+			width: 5rem !important;
+			padding-right: 3rem !important;
 			font-weight: bold;
+			text-align: left;
 			text-transform: uppercase;
+			color: $jet;
+		}
+		span:last-of-type {
+			display: inline-block;
 		}
 	}
 }
