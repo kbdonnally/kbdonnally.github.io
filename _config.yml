@@ -1,7 +1,7 @@
 # 1. metadata
 title: Katherine Donnally Designs
 baseurl: ""
-url: "katherinedoes.design" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://katherinedoes.design" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: >- 
   Design website for portfolio & freelance signups.
@@ -13,12 +13,11 @@ markdown: kramdown
 
 exclude:
   - .sass-cache
-  # - _assets
   - Gemfile
   - Gemfile.lock
-  # - gulpfile.js
+  - gulpfile.js
+  - package.json
   - assets/python
-  - docs
   - node_modules
   - vendor
 
