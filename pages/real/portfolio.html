@@ -43,8 +43,13 @@ menu: true
 						{% if proj.order == project.order %} <!-- pick the one matching current order -->
 						{% for pic in proj.pics %} <!-- loop through all listed pics -->
 						<li class="portfolio-pics__pic">
+							{% assign picorig = 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.image | relative_url %}
+							{% assign picsmall = 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.small | relative_url %}
+							{% assign picmed = 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.medium | relative_url %}
 							<img
-							src="{{ 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.image | relative_url }}"
+							srcset="{{ picsmall }} 400w,
+								    {{ picmed }} 800w"
+							src="{{ picorig }}"
 							alt="{{ pic.alt }}"
 							class="portfolio-pics__img"
 							title="{{ pic.alt }}"
