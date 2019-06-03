@@ -5,7 +5,11 @@ permalink: /portfolio/
 menu: true
 ---
 
+{% assign projects  = site.data.projects2 | sort: 'order' %}
+{% assign images 	= site.data.images | sort: 'order' %}
+
 <main class="portfolio-wrapper">
+	<!-- modal -->
 	<div class="portfolio-modal">
 		<div class="portfolio-modal__button">&times;</div>
 		<section class="portfolio-modal__pic-wrapper">
@@ -14,25 +18,25 @@ menu: true
 		</section>
 	</div>
 
+	<!-- main content of portfolio -->
 	<main class="portfolio-main-content">
+		<!-- title -->
 		<header class="portfolio__big-title">
 			<h1>Portfolio</h1>
 		</header>
 
-		{% assign projects = site.data.projects | sort: 'order' %}
-		{% assign images = site.data.images | sort: 'order' %}
-
-		<main class="portfolio__gallery"> <!-- projects wrapper -->
-
+		<!-- project gallery -->
+		<section class="portfolio__gallery">
 			{% for project in projects %}
-			<article class="portfolio-gallery__item"> <!-- begin project -->
-				<!-- 1. title & role: -->
-				<ul class="portfolio-item__title">
-					<li class="portfolio-title__name"><h2>{{ project.name }}</h2></li>
-					<li class="portfolio-title__role"><h2>{{ project.short-role }}</h2></li>
-				</ul>
+			<article class="portfolio-gallery__project">
+				<section class="portfolio-proj__title">
+					<h2 class="portfolio-title__role">{{ project.role }}</h2>
+					<h2 class="portfolio-title__name">
+						<span>{{ project.site-name }}</span>,
+						<span>{{ project.work-done }}</span>
+					</h2>
+				</section>
 
-				<!-- 2. pics: -->
 				<section class="portfolio-item__pics">
 					<ul class="portfolio-pics__pics-wrapper">
 						{% for proj in images %} <!-- look at all image objects -->
@@ -52,18 +56,30 @@ menu: true
 					</ul>
 				</section>
 
-				<!-- 3. metadata: -->
-				<p class="portfolio-item__date"><em>{{ project.date }}</em></p>
-				<ul class="portfolio-item__metadata">
-					<li><span>Role:</span> {{ project.role | markdownify }}</li>
-					<li><span>About:</span> {{ project.description | markdownify }}</li>
-					<li><span>Link:</span> <p><a href="{{ project.link }}">{{ project.name }}</a></p></li> <!-- <p> b/c markdownify filter adds it; want consistent styles -->
-				</ul>
-				{% unless forloop.last %}
-				<hr> <!-- line break b/t projects -->
-				{% endunless %}
-			</article> <!-- end project -->			
+				<section class="portfolio-item__metadata">
+					<h3 class="portfolio-meta__title">Information:</h3>
+					<ul class="portfolio-meta__content">
+						<li>
+							<span>When:</span>
+							<span>{{ project.when }}</span>
+						</li>
+						<li>
+							<span>Role:</span>
+							<span>{{ project.full-role }}</span>
+						</li>
+						<li>
+							<span>What:</span>
+							<span>{{ project.description }}</span>
+						</li>
+						<li>
+							<span>Visit:</span>
+							<span><a href="{{ project.url }}">{{ project.site-name }}</a></span>
+						</li>
+					</ul>
+				</section>
+
+			</article>
 			{% endfor %}
-		</main> <!-- end gallery -->
-	</main> <!-- end page content -->
+		</section>
+	</main>
 </main>
