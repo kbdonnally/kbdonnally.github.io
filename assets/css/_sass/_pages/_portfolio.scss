@@ -96,24 +96,21 @@
 
 /* Gallery item: */
 
-.portfolio-gallery__item {
+.portfolio-gallery__project {
 	margin: 2rem 0;
 }
 
 /* Title: */
 
 // ul
-.portfolio-item__title {
-	list-style-type: none;
-	margin: 1rem 0;
-	padding-left: 0;
+.portfolio-project__title {
+	
 }
 
+// h2
 [class*="portfolio-title__"] {
-	h2 {
-		margin: .25em 0;
-		line-height: 1;
-	}
+	margin: .25em 0;
+	line-height: 1;
 }
 
 // li
@@ -124,12 +121,7 @@
 // li
 .portfolio-title__name {
 	color: $halfgray;
-}
-
-/* Date: */
-
-.portfolio-item__date {
-
+	margin-bottom: 1em;
 }
 
 /* Images: */
