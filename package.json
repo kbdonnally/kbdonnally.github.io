@@ -1,0 +1,23 @@
+{
+  "name": "kbdonnally.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbdonnally/kbdonnally.github.io.git"
+  },
+  "author": "kbdonnally <kbd3ax@virginia.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbdonnally/kbdonnally.github.io/issues"
+  },
+  "homepage": "https://github.com/kbdonnally/kbdonnally.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-responsive": "^2.14.0"
+  }
+}
