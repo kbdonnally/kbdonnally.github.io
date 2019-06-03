@@ -7,60 +7,81 @@ permalink: /portfolio-new/
 {% assign projects  = site.data.projects2 | sort: 'order' %}
 {% assign images 	= site.data.images | sort: 'order' %}
 
-<section class="portfolio__gallery">
-	{% for project in projects %}
-	<article class="portfolio-gallery__project">
-		<section class="portfolio-proj__title">
-			<h2 class="portfolio-title__role">{{ project.role }}</h2>
-			<h2 class="portfolio-title__name">
-				<span>{{ project.site-name }}</span>,
-				<span>{{ project.work-done }}</span>
-			</h2>
+<main class="portfolio-wrapper">
+	<!-- modal -->
+	<div class="portfolio-modal">
+		<div class="portfolio-modal__button">&times;</div>
+		<section class="portfolio-modal__pic-wrapper">
+			<img class="portfolio-modal__img" src="" alt="">
+			<p class="portfolio-modal__caption">
 		</section>
+	</div>
 
-		<section class="portfolio-item__pics">
-			<ul class="portfolio-pics__pics-wrapper">
-				{% for proj in images %} <!-- look at all image objects -->
-				{% if proj.order == project.order %} <!-- pick the one matching current order -->
-				{% for pic in proj.pics %} <!-- loop through all listed pics -->
-				<li class="portfolio-pics__pic">
-					<img
-					src="{{ 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.image | relative_url }}"
-					alt="{{ pic.alt }}"
-					class="portfolio-pics__img"
-					title="{{ pic.alt }}"
-					aria-label="{{ pic.alt }}"> <!-- end img tag -->
-				</li>
-				{% endfor %}
-				{% endif %}
-				{% endfor %}
-			</ul>
-		</section>
+	<!-- main content of portfolio -->
+	<main class="portfolio-main-content">
+		<!-- title -->
+		<header class="portfolio__big-title">
+			<h1>Portfolio</h1>
+		</header>
 
-		<section class="portfolio-item__metadata">
-			<h3 class="portfolio-meta__title">Information:</h3>
-			<ul class="portfolio-meta__content">
-				<li>
-					<span>When:</span>
-					<span>{{ project.when }}</span>
-				</li>
-				<li>
-					<span>Role:</span>
-					<span>{{ project.full-role }}</span>
-				</li>
-				<li>
-					<span>What:</span>
-					<span>{{ project.description }}</span>
-				</li>
-				<li>
-					<span>Visit:</span>
-					<span><a href="{{ project.url }}">{{ project.site-name }}</a></span>
-				</li>
-			</ul>
+		<!-- project gallery -->
+		<section class="portfolio__gallery">
+			{% for project in projects %}
+			<article class="portfolio-gallery__project">
+				<section class="portfolio-proj__title">
+					<h2 class="portfolio-title__role">{{ project.role }}</h2>
+					<h2 class="portfolio-title__name">
+						<span>{{ project.site-name }}</span>,
+						<span>{{ project.work-done }}</span>
+					</h2>
+				</section>
+
+				<section class="portfolio-item__pics">
+					<ul class="portfolio-pics__pics-wrapper">
+						{% for proj in images %} <!-- look at all image objects -->
+						{% if proj.order == project.order %} <!-- pick the one matching current order -->
+						{% for pic in proj.pics %} <!-- loop through all listed pics -->
+						<li class="portfolio-pics__pic">
+							<img
+							src="{{ 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.image | relative_url }}"
+							alt="{{ pic.alt }}"
+							class="portfolio-pics__img"
+							title="{{ pic.alt }}"
+							aria-label="{{ pic.alt }}"> <!-- end img tag -->
+						</li>
+						{% endfor %}
+						{% endif %}
+						{% endfor %}
+					</ul>
+				</section>
+
+				<section class="portfolio-item__metadata">
+					<h3 class="portfolio-meta__title">Information:</h3>
+					<ul class="portfolio-meta__content">
+						<li>
+							<span>When:</span>
+							<span>{{ project.when }}</span>
+						</li>
+						<li>
+							<span>Role:</span>
+							<span>{{ project.full-role }}</span>
+						</li>
+						<li>
+							<span>What:</span>
+							<span>{{ project.description }}</span>
+						</li>
+						<li>
+							<span>Visit:</span>
+							<span><a href="{{ project.url }}">{{ project.site-name }}</a></span>
+						</li>
+					</ul>
+				</section>
+				
+				{% unless forloop.last %}
+				<hr> <!-- line break b/t projects -->
+				{% endunless %}
+			</article>
+			{% endfor %}
 		</section>
-		{% unless forloop.last %}
-		<hr> <!-- line break b/t projects -->
-		{% endunless %}
-	</article>
-	{% endfor %}
-</section>
+	</main>
+</main>
