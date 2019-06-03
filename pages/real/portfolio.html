@@ -25,7 +25,7 @@ menu: true
 		<main class="portfolio__gallery"> <!-- projects wrapper -->
 
 			{% for project in projects %}
-			<section class="portfolio-gallery__item"> <!-- begin project -->
+			<article class="portfolio-gallery__item"> <!-- begin project -->
 				<!-- 1. title & role: -->
 				<ul class="portfolio-item__title">
 					<li class="portfolio-title__name"><h2>{{ project.name }}</h2></li>
@@ -59,11 +59,10 @@ menu: true
 					<li><span>About:</span> {{ project.description | markdownify }}</li>
 					<li><span>Link:</span> <p><a href="{{ project.link }}">{{ project.name }}</a></p></li> <!-- <p> b/c markdownify filter adds it; want consistent styles -->
 				</ul>
-			</section> <!-- end project -->
-
-			{% unless forloop.last %}
-			<hr> <!-- line break b/t projects -->
-			{% endunless %}
+				{% unless forloop.last %}
+				<hr> <!-- line break b/t projects -->
+				{% endunless %}
+			</article> <!-- end project -->			
 			{% endfor %}
 		</main> <!-- end gallery -->
 	</main> <!-- end page content -->
