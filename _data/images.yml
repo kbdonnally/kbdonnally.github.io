@@ -6,24 +6,38 @@
   order: 1
   pics:
   - image: 1-home.png
+    small: 1-home-400px.png
+    medium: 1-home-800px.png
     caption: none
     alt: Scholars' Lab homepage
   - image: 2-mspace.png
+    small: 2-mspace-400px.png
+    medium: 2-mspace-800px.png
     caption: none
     alt: Scholars' Lab makerspace page
   - image: 3-mspacelist.png
+    small: 3-mspacelist-400px.png
+    medium: 3-mspacelist-800px.png
     caption: none
     alt: Scholars' Lab makerspace inventory list
   - image: 4-spacetech.png
+    small: 4-spacetech-400px.png
+    medium: 4-spacetech-800px.png
     caption: none
     alt: Scholars' Lab spatial tech page
   - image: 5-work.png
+    small: 5-work-400px.png
+    medium: 5-work-800px.png
     caption: none
     alt: Scholars' Lab work page
   - image: 6-blog.png
+    small: 6-blog-400px.png
+    medium: 6-blog-800px.png
     caption: none
     alt: Scholars' Lab blog
   - image: 7-events.png
+    small: 7-events-400px.png
+    medium: 7-events-800px.png
     caption: none
     alt: Scholars' Lab events page
 
@@ -31,21 +45,33 @@
   order: 2
   pics:
   - image: 1-admin.png
+    small: 1-admin-400px.png
+    medium: 1-admin-800px.png
     caption: none
     alt: TBTA administrative timeline landing page
   - image: 2-tlplain.png
+    small: 2-tlplain-400px.png
+    medium: 2-tlplain-800px.png
     caption: none
     alt: TBTA administrative timeline
   - image: 3-tlclicked.png
+    small: 3-tlclicked-400px.png
+    medium: 3-tlclicked-800px.png
     caption: none
     alt: TBTA administrative timeline - item focus
   - image: 4-collxn.png
+    small: 4-collxn-400px.png
+    medium: 4-collxn-800px.png
     caption: none
     alt: TBTA collection landing page example
   - image: 5-stats.png
+    small: 5-stats-400px.png
+    medium: 5-stats-800px.png
     caption: none
     alt: TBTA collection - statistics section
   - image: 6-gallery.png
+    small: 6-gallery-400px.png
+    medium: 6-gallery-800px.png
     caption: none
     alt: TBTA collection - gallery
 
@@ -53,15 +79,23 @@
   order: 3
   pics:
   - image: 1-home.png
+    small: 1-home-400px.png
+    medium: 1-home-800px.png
     caption: none
     alt: Mapping Lowell homepage
   - image: 2-map.png
+    small: 2-map-400px.png
+    medium: 2-map-800px.png
     caption: none
     alt: Mapping Lowell exhibit
   - image: 3-mapclicked.png
+    small: 3-mapclicked-400px.png
+    medium: 3-mapclicked-800px.png
     caption: none
     alt: Mapping Lowell exhibit - item focus
   - image: 4-text.png
+    small: 4-text-400px.png
+    medium: 4-text-800px.png
     caption: none
     alt: Mapping Lowell homepage - text
 
@@ -69,9 +103,13 @@
   order: 4
   pics:
   - image: 1-bigplain.png
+    small: 1-bigplain-400px.png
+    medium: 1-bigplain-800px.png
     caption: none
     alt: Puzzle Poesis full-size menu
   - image: 2-med1.png
+    small: 2-med1-400px.png
+    medium: 2-med1-800px.png
     caption: none
     alt: Puzzle Poesis medium menu
  # - image: 3-med2.png
@@ -81,5 +119,7 @@
    # caption: none
    # alt: Puzzle Poesis small menu
   - image: 4-small2.png
+    small: 4-small2-400px.png
+    medium: 4-small2-800px.png
     caption: none
     alt: Puzzle Poesis small menu
