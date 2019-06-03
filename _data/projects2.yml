@@ -1,0 +1,63 @@
+# scholars' lab
+- order: 1
+  role: Lead Designer
+  site-name: Scholars' Lab
+  work-done: website redesign
+  when: Spring/Summer 2018
+  full-role: >-
+    Lead designer & information architect on redesign
+    of UVA Scholars' Lab website.
+  description: >-
+    The Scholars' Lab is the UVA Library's lab for the
+    practice of experimental scholarship.
+  url: http://scholarslab.org
+  pic-folder: slabdotorg
+
+# tbta
+- order: 2
+  role: Web Designer
+  site-name: Take Back the Archive
+  work-done: historical timeline & collections
+  when: Summer/Fall 2017
+  full-role: >-
+    Web designer on historical timeline, item collections,
+    & item detail pages.
+  description: >-
+    <em>Take Back the Archive</em> is a public history project to
+    preserve, visualize, and contextualize the history of
+    rape and sexual violence at the University of Virginia.
+  url: http://takeback.scholarslab.org
+  pic-folder: takeback
+
+# lowell
+- order: 3
+  role: Web Designer
+  site-name: Mapping Lowell
+  work-done: historical exhibit & homepage
+  when: Spring/Summer 2018
+  full-role: >-
+    Web designer on homepage & an interactive mapping exhibit tracing
+    the flow of money from Lowell to Boston during the Industrial
+    Revolution.
+  description: >-
+    The <em>Historical Atlas of Lowell</em> maps the economic,
+    political, social, and cultural history of Lowell,
+    Massachusetts.
+  url: http://mappinglowell.net
+  pic-folder: lowell
+
+# puzzle poesis
+- order: 4
+  role: Web Designer
+  site-name: Puzzle Poesis
+  work-done: interactive menu
+  when: Fall 2018
+  full-role: >-
+    Web designer on interactive Tetris-style top menu that breaks
+    apart & snaps itself back together, depending on screen size.
+  description: >-
+    UVa's Puzzle Poetry working group aims to treat poems as
+    puzzles, isolate the substance of prosody, and apprehend
+    shape as a medium.
+  url: http://bpasanek.github.io/puzzlepoesis
+  pic-folder: puzzle
