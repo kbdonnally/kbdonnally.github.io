@@ -40,10 +40,22 @@ permalink: /portfolio-new/
 		<section class="portfolio-item__metadata">
 			<h3 class="portfolio-meta__title">Information:</h3>
 			<ul class="portfolio-meta__content">
-				<li><span>When:</span> <span>{{ project.when }}</span></li>
-				<li><span>Role:</span> <span>{{ project.full-role }}</span></li>
-				<li><span>What:</span> <span>{{ project.description }}</span></li>
-				<li><span>Visit:</span> <span><a href="{{ project.url }}">{{ project.site-name }}</a></span></li>
+				<li>
+					<span>When:</span>
+					<span>{{ project.when }}</span>
+				</li>
+				<li>
+					<span>Role:</span>
+					<span>{{ project.full-role }}</span>
+				</li>
+				<li>
+					<span>What:</span>
+					<span>{{ project.description }}</span>
+				</li>
+				<li>
+					<span>Visit:</span>
+					<span><a href="{{ project.url }}">{{ project.site-name }}</a></span>
+				</li>
 			</ul>
 		</section>
 		{% unless forloop.last %}
