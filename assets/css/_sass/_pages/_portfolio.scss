@@ -102,9 +102,9 @@
 
 /* Title: */
 
-// ul
-.portfolio-project__title {
-	
+.portfolio-proj__title {
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid $halfgray;
 }
 
 // h2
@@ -113,15 +113,12 @@
 	line-height: 1;
 }
 
-// li
 .portfolio-title__role {
 
 }
 
-// li
 .portfolio-title__name {
 	color: $halfgray;
-	margin-bottom: 1em;
 }
 
 /* Images: */
