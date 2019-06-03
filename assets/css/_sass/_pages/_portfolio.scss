@@ -172,19 +172,24 @@
 
 /* Metadata: */
 
-// ul
 .portfolio-item__metadata {
+	
+}
+
+.portfolio-meta__title {
+
+}
+
+// ul
+.portfolio-meta__content {
+	list-style-type: none;
 	padding-left: 0;
 	li {
 		position: relative;
-		display: flex; // undo effect of <p> from markdownify filter
 		// label
-		span {
+		span:first-of-type {
 			font-weight: bold;
-		}
-		// value
-		p {
-			padding-left: .5em;
+			text-transform: uppercase;
 		}
 	}
 }
