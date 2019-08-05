@@ -20,13 +20,15 @@
 // Navigation //
 
 .nh__nav {
-
+	height: 3rem;
+	width: 100%;
+	background-color: $mypurple
 }
 
 // Page 1 //g
 
 .nh__page1 {
-	height: 100vh;
+	height: calc(100vh - 3rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
