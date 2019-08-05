@@ -139,18 +139,31 @@
 
 .nh__page4 {
 	height: 100vh;
+	margin-top: .75rem;
+}
+
+[class*="nh-p4__line--"] {
+	height: 2px;
+	margin: calc(.75rem - 1px) auto;
+	background-color: $mypurple;
 }
 
 .nh-p4__line--short {
-
+	width: 66.67%;
 }
 
 .nh-p4__line--long {
-
+	width: 75%;
 }
 
 .nh-p4__link {
-
+	margin: 0;
+	font-size: 4.5rem;
+	text-align: center;
+	border-bottom-width: 0px;
+	a {
+		border-bottom-width: 0px;
+	}
 }
 
 // Footer //
