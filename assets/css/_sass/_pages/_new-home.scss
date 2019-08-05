@@ -27,14 +27,26 @@
 
 .nh__page1 {
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nh-p1__content-wrapper {
+	border-bottom: 2px solid black;
 }
 
 .nh-p1__name {
-
+	font-size: 6rem;
+	border-bottom-width: 0px;
+	margin-bottom: 0;
+	color: $mypurple;
 }
 
 .nh-p1__title {
-
+	margin-top: 0;
+	font-size: 6rem;
+	border-bottom-width: 0px;
 }
 
 // Page 2 //
