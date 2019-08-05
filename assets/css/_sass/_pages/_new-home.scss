@@ -4,6 +4,16 @@
 	font-family: $futura;
 	p {
 		font-family: $source-sans;
+		color: black;
+	}
+	a {
+		color: black;
+		border-bottom: 2px solid $mypurple;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: black;
+			background-color: $mypurple;
+		}
 	}
 }
 
@@ -86,18 +96,29 @@
 
 .nh__page3 {
 	height: 100vh;
+	background-color: $mylightgray;
 }
 
 .nh-p3__content-wrapper {
-
+	height: calc(100vh - 4rem);
+	margin: 1.5rem;
+	padding: 3rem;
+	background-color: white;
+	border-radius: 16px;
 }
 
 .nh-p3__title {
-
+	margin-top: 0;
+	font-size: 4.5rem;
+	font-style: italic;
+	border-bottom: 2px solid $mypurple;
 }
 
 .nh-p3__text {
-
+	width: 87.5%;
+	p {
+		font-size: 24px;
+	}
 }
 
 // Page 4 //
