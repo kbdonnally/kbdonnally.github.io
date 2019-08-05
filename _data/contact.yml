@@ -4,19 +4,19 @@
 - username: kbdonnally@gmail.com
   url: 'mailto:kbdonnally@gmail.com'
   img: 'assets/img/svg/envelope-outline-black.svg'
-  type: email
+  type: Email
   order: 1
 
 # twitter
 - username: '@kbdonnally'
   url: https://twitter.com/kbdonnally
   img: 'assets/img/svg/twitter-black.svg'
-  type: twitter
+  type: Twitter
   order: 3
 
 # github
-- username: kbdonnally
+- username: github.com/kbdonnally
   url: https://github.com/kbdonnally
   img: 'assets/img/svg/github-black.svg'
-  type: github
+  type: GitHub
   order: 2

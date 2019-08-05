@@ -1,0 +1,115 @@
+// New About: //
+
+.na__nav {
+	height: 3rem;
+	width: 100%;
+	background-color: $mypurple;
+}
+
+// Title //
+
+.na__title {
+
+}
+
+.na-title__text {
+	margin: .25em auto;
+	font-size: 4.5rem;
+	font-family: $futura-bold;
+	text-align: center;
+	border-bottom-width: 0px;
+}
+
+[class*="na-title__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
+}
+
+.na-title__line--long {
+	width: 83.33%;
+}
+
+.na-title__line--med {
+	width: 75%;
+}
+
+.na-title__line--short {
+	width: 66.67%;
+}
+
+// Bio //
+
+.na__bio {
+	width: 83.33%;
+	margin: 0 auto;
+}
+
+.na-bio__title, .na-contact__title {
+	margin: .25em 0;
+	font-family: $futura-bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.na-bio__text {
+	p {
+		font-family: $source-sans;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+}
+
+// Contact //
+
+.na__contact {
+	width: 83.33%;
+	margin: 0 auto;
+}
+
+.na-contact__title {
+// covered above
+}
+
+.na-contact__content {
+
+}
+
+// ul
+.na-contact__row {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.na-contact__svg {
+	img {
+		height: 2rem;
+	}
+	padding-right: 1.5rem;
+}
+
+.na-contact__type {
+	width: 5.5rem;
+	font-family: $source-sans;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.na-contact__user {
+	font-family: $source-sans;
+	font-size: 20px;
+	line-height: 1.4;
+	a {
+		font-weight: 400;
+		color: black;
+		border-bottom: 2px solid $mypurple;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: black;
+			background-color: $mypurple;
+		}
+	}
+}

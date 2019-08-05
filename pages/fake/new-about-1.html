@@ -1,0 +1,36 @@
+---
+title: New About
+layout: no-style-2
+permalink: /extra-new-about/
+---
+
+<nav class="na__nav"></nav>
+
+<section class="na__title">
+	<h1 class="na-title__text">About</h1>
+	<div class="na-title__line--long"></div>
+	<div class="na-title__line--med"></div>
+	<div class="na-title__line--short"></div>
+</section>
+
+<section class="na__bio">
+	<h2 class="na-bio__title">Bio</h2>
+	<article class="na-bio__text">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Iaculis eu non diam phasellus vestibulum lorem. Neque gravida in fermentum et sollicitudin ac. Turpis nunc eget lorem dolor sed viverra. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Lobortis scelerisque fermentum dui faucibus in. Egestas pretium aenean pharetra magna ac placerat. Elementum curabitur vitae nunc sed. Nunc lobortis mattis aliquam faucibus purus. Faucibus turpis in eu mi bibendum.</p>
+	</article>
+</section>
+
+<section class="na__contact">
+	<h2 class="na-contact__title">Contact</h2>
+	<article class="na-contact__content">
+		{% assign contacts = site.data.contact | sort: 'order' %}
+		{% for contact in contacts %}
+		<ul class="na-contact__row">
+			<li class="na-contact__svg"><img alt="{{ contact.type }}" title="{{ contact.type }}" src="{{ contact.img | relative_url }}"></li>
+			<li class="na-contact__type">{{ contact.type }}:</li>
+			<li class="na-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
+		</ul>
+		{% endfor %}
+	</article>
+</section>
