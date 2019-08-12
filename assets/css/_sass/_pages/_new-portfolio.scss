@@ -47,7 +47,8 @@
 // Individual entry //
 
 .portfolio-gallery__project {
-
+	width: 91.67%;
+	margin: 0 auto;
 }
 
 // ul
@@ -55,6 +56,7 @@
 	position: relative;
 	display: flex;
 	flex-flow: row wrap; // delete later
+	justify-content: space-between;
 	padding-left: 0;
 	list-style-type: none;
 	@media screen and (max-width: 599px) {
@@ -85,31 +87,46 @@
 }
 
 .portfolio-proj__metadata {
-
+	color: black;
 }
 
 .portfolio-meta__name {
-
+	margin: .25em 0;
+	margin-bottom: 0;
+	font-family: $futura-bold;
+	font-size: 3rem;
+	text-transform: uppercase;
 }
 
-.portfolio-meta__sponsor {
-
+.portfolio-meta__sponsor, .portfolio-meta__note {
+	font-family: $source-sans;
+	font-size: 1.375rem;
+	font-weight: 400;
+	margin: 2px;
 }
 
 .portfolio-meta__note {
-
+	color: $mypurple;
 }
 
 .portfolio-proj__divider {
+	margin: 3rem 0;
+}
 
+[class*="portfolio-divider__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
 }
 
 .portfolio-divider__line--left {
-
+	width: 91.67%;
+	margin-left: 2rem;
 }
 
 .portfolio-divider__line--right {
-
+	width: 91.67%;
+	margin-right: 2rem;
 }
 
 .portfolio-divider__line--left {
