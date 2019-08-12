@@ -32,7 +32,7 @@ permalink: /new-portfolio/
 		<!-- project -->
 		<section class="portfolio-gallery__project">
 			<!-- project pics -->
-			<ul class="portfolio-pics__pics-wrapper">
+			<ul class="portfolio-proj__pics">
 				{% for proj in images %} <!-- look at all image objects -->
 				{% if proj.order == project.order %} <!-- pick the one matching current order -->
 				{% for pic in proj.pics %} <!-- loop through all listed pics -->
