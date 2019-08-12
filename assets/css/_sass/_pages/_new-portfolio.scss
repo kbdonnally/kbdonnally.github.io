@@ -58,23 +58,31 @@
 // Title //
 
 .portfolio__title {
-
+	color: black;
 }
 
 .portfolio-title__text {
+	margin: .25em auto;
+	font-size: 4.5rem;
+	font-family: $futura-bold;
+	text-align: center;
+	border-bottom-width: 0px;
+}
 
+[class*="portfolio-title__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
 }
 
 .portfolio-title__line--left {
-
+	width: 91.67%;
+	margin-left: 2rem;
 }
 
 .portfolio-title__line--right {
-
-}
-
-.portfolio-title__line--left {
-
+	width: 91.67%;
+	margin-right: 2rem;
 }
 
 // Gallery //
