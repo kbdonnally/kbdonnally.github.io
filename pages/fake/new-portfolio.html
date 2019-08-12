@@ -57,8 +57,15 @@ permalink: /new-portfolio/
 			<!-- project information -->
 			<section class="portfolio-proj__metadata">
 				<h2 class="portfolio-meta__name">{{ project.site-name }}</h2>
-				<h4 class="portfolio-meta__sponsor">University of Virginia Library, {{ project.when }}</h4>
+				<h4 class="portfolio-meta__sponsor">{{ project.sponsor }}, {{ project.date }}</h4>
 				<h4 class="portfolio-meta__note">// Click images to enlarge.</h4>
+			</section>
+
+			<!-- divider -->
+			<section class="portfolio-proj__divider">
+				<div class="portfolio-divider__line--left"></div>
+				<div class="portfolio-divider__line--right"></div>
+				<div class="portfolio-divider__line--left"></div>
 			</section>
 		</section>
 		{% endfor %}
