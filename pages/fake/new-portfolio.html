@@ -1,0 +1,73 @@
+---
+title: New Portfolio
+layout: no-style-2
+permalink: /new-portfolio/
+---
+
+<!-- variables -->
+{% assign projects  = site.data.projects2 | sort: 'order' %}
+{% assign images 	= site.data.images | sort: 'order' %}
+
+<main class="portfolio-wrapper">
+	<!-- modal -->
+	<section class="portfolio-modal">
+		<div class="portfolio-modal__button">&times;</div>
+		<section class="portfolio-modal__pic-wrapper">
+			<img class="portfolio-modal__img" src="" alt="">
+			<p class="portfolio-modal__caption"></p>
+		</section>
+	</section>
+
+	<!-- title -->
+	<section class="portfolio__title">
+		<h1 class="portfolio-title__text">Portfolio</h1>
+		<div class="portfolio-title__line--left"></div>
+		<div class="portfolio-title__line--right"></div>
+		<div class="portfolio-title__line--left"></div>
+	</section>
+
+	<!-- gallery -->
+	<article class="portfolio__gallery">
+		{% for project in projects %}
+		<!-- project -->
+		<section class="portfolio-gallery__project">
+			<!-- project pics -->
+			<ul class="portfolio-proj__pics">
+				{% for proj in images %} <!-- look at all image objects -->
+				{% if proj.order == project.order %} <!-- pick the one matching current order -->
+				{% for pic in proj.pics %} <!-- loop through all listed pics -->
+				<li class="portfolio-pics__pic">
+					{% assign picorig = 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.image | relative_url %}
+					{% assign picsmall = 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.small | relative_url %}
+					{% assign picmed = 'assets/img/screenshots/' | append: proj.folder | append: '/' | append: pic.medium | relative_url %}
+					<img
+					srcset="{{ picsmall }} 400w,
+						    {{ picmed }} 800w"
+					src="{{ picorig }}"
+					alt="{{ pic.alt }}"
+					class="portfolio-pics__img"
+					title="{{ pic.alt }}"
+					aria-label="{{ pic.alt }}"> <!-- end img tag -->
+				</li>
+				{% endfor %}
+				{% endif %}
+				{% endfor %}
+			</ul>
+
+			<!-- project information -->
+			<section class="portfolio-proj__metadata">
+				<h2 class="portfolio-meta__name"><a href="{{ project.url }}">{{ project.site-name }}</a></h2>
+				<h4 class="portfolio-meta__sponsor">{{ project.sponsor }}, {{ project.date }}</h4>
+				<h4 class="portfolio-meta__note">// Click images to enlarge.</h4>
+			</section>
+		</section> <!-- end project -->
+
+		<!-- divider -->
+		<section class="portfolio-proj__divider">
+			<div class="portfolio-divider__line--left"></div>
+			<div class="portfolio-divider__line--right"></div>
+			<div class="portfolio-divider__line--left"></div>
+		</section>
+		{% endfor %}
+	</article>
+</main>

@@ -21,7 +21,7 @@ exclude:
   - node_modules
   - vendor
 
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:title/
 
 collections_dir: collections
 
@@ -47,11 +47,11 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: no-style-2
 
 # defaults explained:
 # 1. static images are in assets/img/*
 # 2. by default, any pages/* document has
 #    'order' var of value '10'
-# 3. all pages have default layout unless
+# 3. all pages have no-style-2 layout unless
 #    otherwise specified
