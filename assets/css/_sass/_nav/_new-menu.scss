@@ -1,0 +1,55 @@
+/* New Menu: */
+
+// Wrapper //
+
+.menu-wrapper {
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	width: 100%;
+	background-color: $mypurple;
+}
+
+// Home button //
+
+.menu__home-link {
+	a {
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		font-family: $futura;
+		font-weight: 700;
+		line-height: 60px;
+		color: $antiflashwhite;
+		transition: color .3s background-color .3s;
+		&:hover, &:focus {
+			color: $mypurple;
+			background-color: black;
+			border-bottom-width: 0;
+		}
+	}
+}
+
+// Pages //
+
+.menu__page-list {
+	position: relative;
+	display: flex;
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.menu-list__item {
+	a {
+		margin-right: 1.5rem;
+		font-family: $futura;
+		font-weight: 700;
+		color: $antiflashwhite;
+		transition: color .3s background-color .3s;
+		&:hover, &:focus {
+			color: $mypurple;
+			background-color: black;
+			border-bottom-width: 0;
+		}
+	}
+}

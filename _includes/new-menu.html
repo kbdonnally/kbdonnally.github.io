@@ -1,0 +1,12 @@
+<nav class="menu-wrapper">
+	<section class="menu__home-link"> <!-- turn into logo -->
+		<a href="{{ site.url}}">Home</a>
+	</section>
+	<ul class="menu__page-list">
+	{% for page in site.pages %}
+	{% if page.layout and page.menu == true %}
+		<li class="menu-list__item"><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+	{% endif %}
+	{% endfor %}
+	</ul>
+</nav>
