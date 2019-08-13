@@ -1,0 +1,59 @@
+/* New Intake: */
+
+// Title //
+
+.intake__title {
+
+}
+
+.intake-title__text {
+	margin: .25em auto;
+	font-size: 4.5rem;
+	font-family: $futura-bold;
+	text-align: center;
+	border-bottom-width: 0px;
+}
+
+[class*="intake-title__line--"] {
+	height: 2px;
+	margin: calc(1.5rem - 1px) auto;
+	background-color: $mypurple;
+}
+
+.intake-title__line--long {
+	width: 83.33%;
+}
+
+.intake-title__line--med {
+	width: 75%;
+}
+
+.intake-title__line--short {
+	width: 66.67%;
+}
+
+// Text content //
+
+.intake__text {
+	width: 83.33%;
+	margin: 0 auto;
+	p {
+		font-family: $source-sans;
+		font-size: 20px;
+	}
+}
+
+// iframe //
+
+.intake__form {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 83.33%;
+	margin: 0 auto;
+	border: 2px solid $mypurple;
+}
+
+.intake__iframe {
+	margin: 0 auto;
+}
