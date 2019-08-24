@@ -23,7 +23,7 @@
 	right: 3rem;
 	line-height: 1;
 	font-size: 2rem;
-	color: $antiflashwhite;
+	color: white;
 	cursor: pointer;
 }
 
@@ -44,5 +44,7 @@
 }
 
 .portfolio-modal__caption {
-	color: $antiflashwhite;
+	font-family: $source-sans;
+	font-size: 24px;
+	color: white;
 }

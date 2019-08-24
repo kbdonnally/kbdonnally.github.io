@@ -87,6 +87,7 @@
 }
 
 .portfolio-proj__metadata {
+	position: relative;
 	color: black;
 }
 
@@ -106,11 +107,20 @@
 	}
 }
 
-.portfolio-meta__sponsor, .portfolio-meta__note {
+.portfolio-meta__sponsor, .portfolio-meta__role, .portfolio-meta__note {
 	font-family: $source-sans;
 	font-size: 1.375rem;
 	font-weight: 400;
 	margin: 2px;
+}
+
+.portfolio-meta__sponsor {
+	color: $medgray;
+}
+
+.portfolio-meta__role {
+	color: black;
+	max-width: 800px;
 }
 
 .portfolio-meta__note {
