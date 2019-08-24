@@ -20,6 +20,7 @@
 @import '_vars/fonts';
 
 // layouts:
+@import '_layouts/blog-post';
 @import '_layouts/elements';
 @import '_layouts/default';
 @import '_layouts/general';
@@ -33,6 +34,7 @@
 
 // pages:
 @import '_pages/about';
+@import '_pages/blog';
 @import '_pages/contact';
 @import '_pages/hire-me';
 @import '_pages/home';

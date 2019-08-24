@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: default
+layout: new-default
 permalink: /blog/
 menu: false
 ---
@@ -16,11 +16,20 @@ menu: false
 	{% for post in site.posts %}
 	<article class="blog-posts__post">
 		<h2 class="blog-post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		<h4 class="post-meta__date">// Posted {{ post.date | date: "%b. %-d, %Y"}} // tags:
-			<ul>{% for cat in post.categories %}<li>{{ cat }}</li>{% endfor %}</ul>
+		<h4 class="blog-post__meta">// Posted {{ post.date | date: "%b. %-d, %Y"}} // tags:
+			<ul class="post-meta__tags">
+				{% for cat in post.categories %}
+				<li class="post-meta__tag">{{ cat }}</li>
+				{% endfor %}
+			</ul>
 		</h4>
-		<p>{{ post.excerpt | truncatewords: 50 }}</p>
-		<a href="{{ post.url }}">Read More</a>
+		<section class="blog-post__read-more">
+			<div class="post-read__excerpt">
+				{{ post.excerpt | truncatewords: 35 }}
+			</div>
+			
+			<a class="post-read__more" href="{{ post.url }}">Read More</a>
+		</section>
 	</article>
 	{% endfor %}
 </main>
