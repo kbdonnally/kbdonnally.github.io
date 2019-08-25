@@ -3,10 +3,9 @@
 		<a href="{{ site.url}}">Home</a>
 	</section>
 	<ul class="menu__page-list">
-	{% for page in site.pages %}
-	{% if page.layout and page.menu == true %}
+	{% assign pages = site.pages | where: 'menu', 'true' | sort: 'order' %}
+	{% for page in pages %}
 		<li class="menu-list__item"><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-	{% endif %}
 	{% endfor %}
 	</ul>
 </nav>
