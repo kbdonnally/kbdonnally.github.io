@@ -47,7 +47,26 @@ if (document.querySelector('.new-home-wrapper')) {
 	opt2.addEventListener('click', scrollDown);
 	opt3.addEventListener('click', scrollDown);
 
-	function scrollDown() {
+	function scrollDown(e) {
+		let text1 = document.querySelector('.nh-p3__text--1');
+		let text2 = document.querySelector('.nh-p3__text--2');
+		let text3 = document.querySelector('.nh-p3__text--3');
+
+		if (e.target.classList.contains('nh-options__option-1')) {
+			text1.classList.remove('nh-p3__text--hide');
+			text2.classList.add('nh-p3__text--hide');
+			text3.classList.add('nh-p3__text--hide');
+		}
+		if (e.target.classList.contains('nh-options__option-2')) {
+			text1.classList.add('nh-p3__text--hide');
+			text2.classList.remove('nh-p3__text--hide');
+			text3.classList.add('nh-p3__text--hide');
+		}
+		if (e.target.classList.contains('nh-options__option-3')) {
+			text1.classList.add('nh-p3__text--hide');
+			text2.classList.add('nh-p3__text--hide');
+			text3.classList.remove('nh-p3__text--hide');
+		}
 		inThatCase.scrollIntoView({behavior: 'smooth'});
 	}
 }
