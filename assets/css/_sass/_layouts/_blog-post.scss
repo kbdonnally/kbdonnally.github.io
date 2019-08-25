@@ -88,4 +88,43 @@
 			color: $medgray;
 		}
 	}
+	ul {
+		position: relative;
+		padding-left: 1.5em;
+		list-style-type: none;
+		li {
+			position: relative;
+			font-size: 20px;
+			&::before {
+				content: '';
+				position: absolute;
+				left: calc(-1.5em + 4px);
+				top: calc(.7em - 3px);
+				display: block;
+				height: 8px;
+				width: 8px;
+				border-radius: 50%;
+				background-color: $mypurple;
+			}
+		}
+	}
+	ol {
+		position: relative;
+		padding-left: 1.5em;
+		list-style: none;
+		counter-reset: ol-counter;
+		li {
+			position: relative;
+			font-size: 20px;
+			counter-increment: ol-counter;
+			&::before {
+				content: counter(ol-counter) ". ";
+				position: absolute;
+				left: -1.5em;
+				font-family: $futura;
+				font-weight: 700;
+				color: $mypurple;
+			}
+		}
+	}
 }
