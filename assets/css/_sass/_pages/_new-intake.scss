@@ -41,6 +41,15 @@
 		font-family: $source-sans;
 		font-size: 20px;
 	}
+	a {
+		color: black;
+		border-bottom: 2px solid $mypurple;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: black;
+			background-color: $mypurple;
+		}
+	}
 }
 
 // iframe //
