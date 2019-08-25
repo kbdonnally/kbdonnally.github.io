@@ -75,7 +75,7 @@
 	justify-content: space-around;
 	height: 100vh;
 	border: 1.5rem solid $mylightgray;
-	border-bottom-width: 0;
+//	border-bottom-width: 0;
 }
 
 .nh-p2__title {
@@ -147,8 +147,9 @@
 }
 
 .nh-p3__content-wrapper {
-	height: calc(100vh - 4rem);
+	height: calc(100vh - 2rem);
 	margin: 1.5rem;
+	margin-top: 0;
 	padding: 3rem;
 	background-color: white;
 //	border-radius: 16px;
@@ -161,11 +162,15 @@
 	border-bottom: 2px solid $mypurple;
 }
 
-.nh-p3__text {
+[class*="nh-p3__text"] {
 	width: 87.5%;
 	p {
 		font-size: 24px;
 	}
+}
+
+.nh-p3__text--hide {
+	display: none;
 }
 
 // Page 4 //
