@@ -18,12 +18,19 @@
 	font-family: $futura-bold;
 	text-align: center;
 	border-bottom-width: 0px;
+	@media screen and (max-width: 400px) {
+		margin-top: .5em;
+		font-size: 3rem;
+	}
 }
 
 [class*="na-title__line--"] {
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
 	background-color: $mypurple;
+	@media screen and (max-width: 400px) {
+		margin: calc(1rem - 1px) auto;
+	}
 }
 
 .na-title__line--long {
@@ -43,6 +50,9 @@
 .na__bio {
 	width: 83.33%;
 	margin: 0 auto;
+	@media screen and (max-width: 400px) {
+		width: 91.67%;
+	}
 }
 
 .na-bio__title, .na-contact__title {
@@ -50,13 +60,21 @@
 	font-family: $futura-bold;
 	font-size: 3rem;
 	text-transform: uppercase;
+	@media screen and (max-width: 400px) {
+		font-size: 2.25rem;
+	}
 }
 
 .na-bio__text {
 	p {
 		font-family: $source-sans;
-		font-size: 20px;
+		font-size: 1.25rem;
 		line-height: 1.4;
+	}
+	@media screen and (max-width: 400px) {
+		p {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -65,6 +83,10 @@
 .na__contact {
 	width: 83.33%;
 	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	@media screen and (max-width: 400px) {
+		width: 91.67%;
+	}
 }
 
 .na-contact__title {
@@ -96,6 +118,10 @@
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 1.4;
+	@media screen and (max-width: 400px) {
+		width: 5rem;
+		font-size: 18px;
+	}
 }
 
 .na-contact__user {
@@ -111,5 +137,8 @@
 			color: black;
 			background-color: $mypurple;
 		}
+	}
+	@media screen and (max-width: 400px) {
+		font-size: 18px;
 	}
 }
