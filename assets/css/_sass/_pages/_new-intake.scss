@@ -11,13 +11,22 @@
 	font-size: 4.5rem;
 	font-family: $futura-bold;
 	text-align: center;
+	color: black;
 	border-bottom-width: 0px;
+	@media screen and (max-width: 400px) {
+		max-width: 91.67%;
+		margin-top: .5em;
+		font-size: 3rem;
+	}
 }
 
 [class*="intake-title__line--"] {
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
 	background-color: $mypurple;
+	@media screen and (max-width: 400px) {
+		margin: calc(1rem - 1px) auto;
+	}
 }
 
 .intake-title__line--long {
@@ -50,6 +59,11 @@
 			background-color: $mypurple;
 		}
 	}
+	@media screen and (max-width: 400px) {
+		p {
+			font-size: 18px;
+		}
+	}
 }
 
 // iframe //
@@ -61,6 +75,9 @@
 	width: 83.33%;
 	margin: 0 auto;
 	border: 2px solid $mypurple;
+	@media screen and (max-width: 400px) {
+		width: 91.67%;
+	}
 }
 
 .intake__iframe {
