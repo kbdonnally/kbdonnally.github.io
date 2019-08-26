@@ -12,22 +12,37 @@
 	font-family: $futura-bold;
 	text-align: center;
 	border-bottom-width: 0px;
+	@media screen and (max-width: 400px) {
+		margin-top: .5em;
+		font-size: 3rem;
+	}
 }
 
 [class*="blog-title__line--"] {
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
 	background-color: $mypurple;
+	@media screen and (max-width: 400px) {
+		margin: calc(1rem - 1px) auto;
+	}
 }
 
 .blog-title__line--left {
 	width: 91.67%;
 	margin-left: 2rem;
+	@media screen and (max-width: 400px) {
+		width: calc(91.67% - 1rem);
+		margin-left: 1rem;
+	}
 }
 
 .blog-title__line--right {
 	width: 91.67%;
 	margin-right: 2rem;
+	@media screen and (max-width: 400px) {
+		width: calc(91.67% - 1rem);
+		margin-right: 1rem;
+	}
 }
 
 // List //
