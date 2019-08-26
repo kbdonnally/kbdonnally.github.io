@@ -20,7 +20,7 @@
 // Page 1 //
 
 .nh__page1 {
-	height: calc(100vh - 3rem);
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -88,8 +88,9 @@
 	border-width: 0px;
 	border-bottom: 2px solid $mypurple;
 	@media screen and (max-width: 400px) {
+		margin-top: 1rem;
 		padding: 0 4.167%;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-style: italic;
 		text-align: left;
 		color: $mypurple;
@@ -105,12 +106,16 @@
 	margin-bottom: 4.5rem;
 	padding: 0 8.33%;
 	@media screen and (max-width: 400px) {
-		flex-flow: column nowrap;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		height: calc(100vh - 7.5rem);
 		padding: 0 4.167%;
 	}
 }
 
 [class*="nh-options__option"] {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -124,6 +129,26 @@
 		cursor: pointer;
 		* {
 			color: white;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		width: 100%;
+		margin-bottom: 1.5rem;
+		padding: 0 1.5rem;
+		height: auto;
+		border-radius: 0;
+		background-color: $textgray;
+		* {
+			color: white;
+		}
+		span {
+			display: none;
+		}
+		&:hover, &:focus {
+			background-color: white;
+			* {
+				color: $textgray;
+			}
 		}
 	}
 }
@@ -146,13 +171,16 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
-	color: $textgray;
+//	color: $textgray;
 	transition: color .3s;
 	&:hover, &:focus {
-		color: white;
+	//	color: white;
 	}
 	@media screen and (max-width: 400px) {
 		flex-flow: column nowrap;
+		width: 100%;
+		max-width: 100%;
+		font-size: 1.5rem;
 	}
 }
 
@@ -176,6 +204,7 @@
 	@media screen and (max-width: 400px) {
 		min-height: auto;
 		margin: 0;
+		margin-bottom: 2.5rem;
 		padding: 0 4.167%;
 	}
 }
@@ -186,7 +215,7 @@
 	font-style: italic;
 	border-bottom: 2px solid $mypurple;
 	@media screen and (max-width: 400px) {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		color: $mypurple;
 		border-bottom-width: 0;
 	}
@@ -199,8 +228,10 @@
 	}
 	@media screen and (max-width: 400px) {
 		width: 100%;
+		border: 2px solid black;
+		padding: 0 1.125rem;
 		p {
-			font-size: 1rem;
+			font-size: 1.125rem;
 		}
 	}
 }
@@ -214,6 +245,10 @@
 .nh__page4 {
 	height: 100vh;
 	margin-top: .75rem;
+	@media screen and (max-width: 400px) {
+		height: auto;
+		margin: 2.5rem 0;
+	}
 }
 
 [class*="nh-p4__line--"] {
