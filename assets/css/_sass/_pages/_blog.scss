@@ -8,13 +8,17 @@
 
 .blog-title__text {
 	margin: .25em auto;
-	font-size: 4.5rem;
+	margin-top: .5em;
+	font-size: 3rem;
 	font-family: $futura-bold;
 	text-align: center;
 	border-bottom-width: 0px;
-	@media screen and (max-width: 400px) {
-		margin-top: .5em;
-		font-size: 3rem;
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+	}
+	@media screen and (min-width: 900px) {
+		margin: .25em auto;
+		font-size: 4.5rem;
 	}
 }
 
@@ -28,20 +32,20 @@
 }
 
 .blog-title__line--left {
-	width: 91.67%;
-	margin-left: 2rem;
-	@media screen and (max-width: 400px) {
-		width: calc(91.67% - 1rem);
-		margin-left: 1rem;
+	width: calc(91.67% - 1rem);
+	margin-left: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-left: 2rem;
 	}
 }
 
 .blog-title__line--right {
-	width: 91.67%;
-	margin-right: 2rem;
-	@media screen and (max-width: 400px) {
-		width: calc(91.67% - 1rem);
-		margin-right: 1rem;
+	width: calc(91.67% - 1rem);
+	margin-right: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-right: 2rem;
 	}
 }
 
@@ -61,9 +65,9 @@
 .blog-posts__post {
 	border: 2px solid $mypurple;
 	margin: 1.5rem 0;
-	padding: 2rem;
-	@media screen and (max-width: 400px) {
-		padding: 1.5rem;
+	padding: 1.5rem;
+	@media screen and (min-width: 900px) {
+		padding: 2rem;
 	}
 }
 
@@ -71,7 +75,7 @@
 	margin: .25em 0;
 	margin-top: 0;
 	font-family: $futura-bold;
-	font-size: 3rem;
+	font-size: 2rem;
 	a {
 		color: black;
 		transition: background-color .3s;
@@ -80,8 +84,11 @@
 			border-bottom-width: 0;
 		}
 	}
-	@media screen and (max-width: 400px) {
-		font-size: 2rem;
+	@media screen and (min-width: 768px) {
+		font-size: 2.5rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 3rem;
 	}
 }
 
@@ -99,6 +106,9 @@
 		span {
 			display: initial;
 		}
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 1.25rem;
 	}
 }
 
@@ -129,7 +139,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 900px) {
 		flex-flow: column nowrap;
 		align-items: flex-start;
 	}
@@ -141,12 +151,14 @@
 	p {
 		padding: 0;
 		margin: 0;
-		font-size: 1.25rem;
+		font-size: 18px;
 		line-height: 1.4;
 		color: $medgray;
-		@media screen and (max-width: 400px) {
+		@media screen and (min-width: 768px) {
+			font-size: 1.25rem;
+		}
+		@media screen and (max-width: 900px) {
 			margin: .5em 0 1em 0;
-			font-size: 18px;
 		}
 	}
 }
@@ -154,7 +166,7 @@
 .post-read__more {
 	padding: 1px 8px;
 	font-family: $futura-bold;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	color: white;
 	background-color: black;
@@ -165,7 +177,10 @@
 		color: black;
 		background-color: white;
 	}
-	@media screen and (max-width: 400px) {
-		font-size: 16px;
+	@media screen and (min-width: 768px) {
+		font-size: 1.125rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 1.25rem;
 	}
 }
