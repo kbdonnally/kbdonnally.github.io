@@ -196,51 +196,61 @@
 // Page 3 //
 
 .nh__page3 {
-	height: 100vh;
-	background-color: $mylightgray;
-	@media screen and (max-width: 400px) {
-		height: auto;
-		background-color: white;
+	height: auto;
+	@media screen and (min-width: 900px) {
+		height: 100vh;
+		background-color: $mylightgray;
 	}
 }
 
 .nh-p3__content-wrapper {
-	min-height: calc(100vh - 2rem);
-	margin: 1.5rem;
-	margin-top: 0;
-	padding: 3rem;
+	min-height: auto;
+	margin: 0;
+	margin-bottom: 2.5rem;
+	padding: 0 4.167%;
 	background-color: white;
-	@media screen and (max-width: 400px) {
-		min-height: auto;
-		margin: 0;
-		margin-bottom: 2.5rem;
-		padding: 0 4.167%;
+	@media screen and (min-width: 900px) {
+		min-height: calc(100vh - 2rem);
+		margin: 1.5rem;
+		margin-top: 0;
+		padding: 3rem;
 	}
 }
 
 .nh-p3__title {
 	margin-top: 0;
-	font-size: 4.5rem;
+	font-size: 2.5rem;
 	font-style: italic;
-	border-bottom: 2px solid $mypurple;
-	@media screen and (max-width: 400px) {
-		font-size: 2.5rem;
-		color: $mypurple;
-		border-bottom-width: 0;
+	color: $mypurple;
+	border-bottom-width: 0;
+	@media screen and (min-width: 768px) {
+		font-size: 3rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 4rem;
+		color: black;
+		border-bottom: 2px solid $mypurple;
 	}
 }
 
 [class*="nh-p3__text"] {
-	width: 87.5%;
+	width: 100%;
 	p {
-		font-size: 24px;
+		font-size: 1.125rem;
 	}
-	@media screen and (max-width: 400px) {
-		width: 100%;
-		border: 2px solid black;
-		padding: 0 1.125rem;
+	@media screen and (min-width: 768px) {
 		p {
-			font-size: 1.125rem;
+			font-size: 1.25rem;
+		}
+	}
+	@media screen and (max-width: 900px) {
+		padding: 0 1.125rem;
+		border: 2px solid black;
+	}
+	@media screen and (min-width: 900px) {
+		width: 87.5%;
+		p {
+			font-size: 24px;
 		}
 	}
 }
