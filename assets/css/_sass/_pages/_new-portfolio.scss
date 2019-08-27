@@ -16,13 +16,17 @@
 
 .portfolio-title__text {
 	margin: .25em auto;
-	font-size: 4.5rem;
+	margin-top: .5em;
+	font-size: 3rem;
 	font-family: $futura-bold;
 	text-align: center;
 	border-bottom-width: 0px;
-	@media screen and (max-width: 400px) {
-		margin-top: .5em;
-		font-size: 3rem;
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+	}
+	@media screen and (min-width: 900px) {
+		margin: .25em auto;
+		font-size: 4.5rem;
 	}
 }
 
@@ -35,21 +39,21 @@
 	}
 }
 
-.portfolio-title__line--left {
-	width: 91.67%;
-	margin-left: 2rem;
-	@media screen and (max-width: 400px) {
-		width: calc(91.67% - 1rem);
-		margin-left: 1rem;
+.portfolio-title__line--left {	
+	width: calc(91.67% - 1rem);
+	margin-left: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-left: 2rem;
 	}
 }
 
 .portfolio-title__line--right {
-	width: 91.67%;
-	margin-right: 2rem;
-	@media screen and (max-width: 400px) {
-		width: calc(91.67% - 1rem);
-		margin-right: 1rem;
+	width: calc(91.67% - 1rem);
+	margin-right: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-right: 2rem;
 	}
 }
 
@@ -162,20 +166,20 @@
 }
 
 .portfolio-divider__line--left {
-	width: 91.67%;
-	margin-left: 2rem;
-	@media screen and (max-width: 400px) {
-		width: calc(91.67% - 1rem);
-		margin-left: 1rem;
+	width: calc(91.67% - 1rem);
+	margin-left: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-left: 2rem;
 	}
 }
 
 .portfolio-divider__line--right {
-	width: 91.67%;
-	margin-right: 2rem;
-	@media screen and (max-width: 400px) {
-		width: calc(91.67% - 1rem);
-		margin-right: 1rem;
+	width: calc(91.67% - 1rem);
+	margin-right: 1rem;
+	@media screen and (min-width: 900px) {
+		width: 91.67%;
+		margin-right: 2rem;
 	}
 }
 

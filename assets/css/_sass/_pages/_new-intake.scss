@@ -7,16 +7,23 @@
 }
 
 .intake-title__text {
+	max-width: 91.67%;
 	margin: .25em auto;
-	font-size: 4.5rem;
+	margin-top: .5em;
+	font-size: 3rem;
 	font-family: $futura-bold;
 	text-align: center;
 	color: black;
 	border-bottom-width: 0px;
 	@media screen and (max-width: 400px) {
-		max-width: 91.67%;
-		margin-top: .5em;
-		font-size: 3rem;
+		
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+	}
+	@media screen and (min-width: 900px) {
+		margin: .25em auto;
+		font-size: 4.5rem;
 	}
 }
 
