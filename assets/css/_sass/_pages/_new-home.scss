@@ -190,11 +190,7 @@
 // Page 3 //
 
 .nh__page3 {
-	height: auto;
-	@media screen and (min-width: 900px) {
-		height: 100vh;
-		background-color: $mylightgray;
-	}
+
 }
 
 .nh-p3__content-wrapper {
@@ -202,12 +198,8 @@
 	margin: 0;
 	margin-bottom: 2.5rem;
 	padding: 0 4.167%;
-	background-color: white;
-	@media screen and (min-width: 900px) {
-		min-height: calc(100vh - 2rem);
-		margin: 1.5rem;
-		margin-top: 0;
-		padding: 3rem;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 4.5rem;
 	}
 }
 
@@ -220,15 +212,17 @@
 	@media screen and (min-width: 768px) {
 		font-size: 3rem;
 	}
-	@media screen and (min-width: 900px) {
-		font-size: 4rem;
-		color: black;
-		border-bottom: 2px solid $mypurple;
+	@media screen and (min-width: 1200px) {
+		font-family: $futura-bold;
+		font-size: 4.5rem;
+	//	color: black;
+	//	border-bottom: 2px solid $mypurple;
 	}
 }
 
 [class*="nh-p3__text"] {
 	width: 100%;
+	border: 2px solid black;
 	p {
 		font-size: 1.125rem;
 	}
@@ -237,14 +231,15 @@
 			font-size: 1.25rem;
 		}
 	}
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 1200px) {
 		padding: 0 1.125rem;
-		border: 2px solid black;
+		
 	}
-	@media screen and (min-width: 900px) {
+	@media screen and (min-width: 1200px) {
 		width: 87.5%;
+		padding: 0 1.5rem;
 		p {
-			font-size: 24px;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -262,6 +257,9 @@
 		height: 100vh;
 		margin-top: .75rem;
 	}
+	@media screen and (min-width: 1200px) {
+		height: auto;
+	}
 }
 
 [class*="nh-p4__line--"] {
@@ -275,10 +273,16 @@
 
 .nh-p4__line--short {
 	width: 75%;
+	@media screen and (min-width: 1200px) {
+		width: 83.33%;
+	}
 }
 
 .nh-p4__line--long {
 	width: 83.33%;
+	@media screen and (min-width: 1200px) {
+		width: 91.67%;
+	}
 }
 
 .nh-p4__link {
@@ -292,7 +296,8 @@
 	@media screen and (min-width: 768px) {
 		font-size: 4rem;
 	}
-	@media screen and (min-width: 900px) {
+	@media screen and (min-width: 1200px) {
+		font-family: $futura-bold;
 		font-size: 4.5rem;
 	}
 }
