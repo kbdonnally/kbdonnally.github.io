@@ -112,6 +112,9 @@
 		font-size: 4.5rem;
 		border-width: 0px;
 	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
 }
 
 .nh-p2__options {
@@ -191,8 +194,11 @@
 	}
 	@media screen and (min-width: 1200px) {
 		max-width: 27vw;
-		font-size: 28px;
+		font-size: 28px; // 1.75rem
 		text-align: center;	
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 34px; // 2.125rem
 	}
 }
 
@@ -210,6 +216,9 @@
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 4.5rem;
 	}
+	@media screen and (min-width: 1440px) {
+		margin-bottom: 5rem;
+	}
 }
 
 .nh-p3__title {
@@ -226,6 +235,9 @@
 		font-size: 4.5rem;
 	//	color: black;
 	//	border-bottom: 2px solid $mypurple;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
 	}
 }
 
@@ -251,6 +263,11 @@
 			font-size: 1.5rem;
 		}
 	}
+	@media screen and (min-width: 1440px) {
+		p {
+			font-size: 1.75rem; // 28px
+		}
+	}
 }
 
 .nh-p3__text--hide {
@@ -269,6 +286,9 @@
 	@media screen and (min-width: 1200px) {
 		height: auto;
 	}
+	@media screen and (min-width: 1440px) {
+		margin-bottom: 5rem;
+	}
 }
 
 [class*="nh-p4__line--"] {
@@ -277,6 +297,9 @@
 	background-color: $mypurple;
 	@media screen and (min-width: 768px) and (max-width: 1000px) {
 		margin: calc(1.25rem - 1px) auto;	
+	}
+	@media screen and (min-width: 1440px) {
+		margin: calc(1.5rem - 1px) auto;
 	}
 }
 
@@ -308,6 +331,9 @@
 	@media screen and (min-width: 1200px) {
 		font-family: $futura-bold;
 		font-size: 4.5rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
 	}
 }
 
