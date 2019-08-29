@@ -30,6 +30,9 @@
 		border-bottom-width: 0px;
 		transition: color .3s background-color .3s;
 	}
+	@media screen and (min-width: 1440px) {
+		font-size: 24px; // 1.5rem
+	}
 }
 
 .new-footer__link--name {
