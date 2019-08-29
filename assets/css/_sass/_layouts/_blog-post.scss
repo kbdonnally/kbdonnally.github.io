@@ -8,6 +8,9 @@
 	margin: 0 auto;
 	margin-top: 3rem;
 	padding: 0 8.33%;
+	@media screen and (min-width: 1440px) {
+		max-width: calc(1000px + 8.33vw);
+	}
 }
 
 .post-meta__back {
@@ -29,6 +32,9 @@
 	@media screen and (max-width: 400px) {
 		font-size: 18px;
 	}
+	@media screen and (min-width: 1440px) {
+		font-size: 1.375rem;
+	}
 }
 
 .post-meta__title {
@@ -40,6 +46,9 @@
 	text-transform: none;
 	@media screen and (max-width: 400px) {
 		font-size: 2.25rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 3.5rem;
 	}
 }
 
@@ -57,6 +66,9 @@
 		span {
 			display: initial;
 		}
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 24px;
 	}
 }
 
@@ -78,6 +90,9 @@
 	font-family: $source-sans;
 	font-size: 20px;
 	color: black;
+	@media screen and (min-width: 1440px) {
+		max-width: calc(1000px + 8.33vw);
+	}
 	p {
 		font-size: 20px;
 		line-height: 1.4;
@@ -145,6 +160,11 @@
 	@media screen and (max-width: 400px) {
 		p, ul li, ol li {
 			font-size: 18px;
+		}
+	}
+	@media screen and (min-width: 1440px) {
+		p, ul li, ol li {
+			font-size: 24px;
 		}
 	}
 }

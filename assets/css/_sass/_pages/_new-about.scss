@@ -26,6 +26,9 @@
 		margin: .25em auto;
 		font-size: 4.5rem;
 	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
 }
 
 [class*="na-title__line--"] {
@@ -57,6 +60,9 @@
 	@media screen and (max-width: 400px) {
 		width: 91.67%;
 	}
+	@media screen and (min-width: 1440px) {
+	//	max-width: 75%;
+	}
 }
 
 .na-bio__title, .na-contact__title {
@@ -66,6 +72,9 @@
 	text-transform: uppercase;
 	@media screen and (max-width: 400px) {
 		font-size: 2.25rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 3.5rem;
 	}
 }
 
@@ -80,6 +89,11 @@
 			font-size: 18px;
 		}
 	}
+	@media screen and (min-width: 1440px) {
+		p {
+			font-size: 24px;
+		}
+	}
 }
 
 // Contact //
@@ -90,6 +104,9 @@
 	margin-bottom: 1.5rem;
 	@media screen and (max-width: 400px) {
 		width: 91.67%;
+	}
+	@media screen and (min-width: 1440px) {
+	//	max-width: 75%;
 	}
 }
 
@@ -105,15 +122,23 @@
 .na-contact__row {
 	position: relative;
 	display: flex;
+	align-items: center;
 	list-style-type: none;
 	padding-left: 0;
 }
 
 .na-contact__svg {
+	display: flex;
+	align-items: center;
+	padding-right: 1.5rem;
 	img {
 		height: 2rem;
 	}
-	padding-right: 1.5rem;
+	@media screen and (min-width: 1440px) {
+		img {
+			height: 39px;
+		}
+	}
 }
 
 .na-contact__type {
@@ -125,6 +150,10 @@
 	@media screen and (max-width: 400px) {
 		width: 5rem;
 		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		width: 6.5rem;
+		font-size: 24px;
 	}
 }
 
@@ -144,5 +173,8 @@
 	}
 	@media screen and (max-width: 400px) {
 		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 24px;
 	}
 }

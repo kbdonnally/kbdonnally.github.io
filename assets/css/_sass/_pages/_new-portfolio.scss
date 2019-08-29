@@ -28,6 +28,9 @@
 		margin: .25em auto;
 		font-size: 4.5rem;
 	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
 }
 
 [class*="portfolio-title__line--"] {
@@ -103,6 +106,9 @@
 		height: auto;
 		width: 100%;
 	}
+	@media screen and (min-width: 1440px) {
+		height: 240px;
+	}
 }
 
 .portfolio-proj__metadata {
@@ -127,6 +133,9 @@
 	@media screen and (max-width: 400px) {
 		font-size: 2rem;
 	}
+	@media screen and (min-width: 1440px) {
+		font-size: 3.5rem;
+	}
 }
 
 .portfolio-meta__sponsor, .portfolio-meta__role, .portfolio-meta__note {
@@ -136,6 +145,9 @@
 	margin: 2px;
 	@media screen and (max-width: 400px) {
 		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 1.5rem;
 	}
 }
 
