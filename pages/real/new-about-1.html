@@ -1,0 +1,36 @@
+---
+title: About
+layout: new-default
+permalink: /about/
+menu: true
+order: 2
+---
+
+<section class="na__title">
+	<h1 class="na-title__text">About</h1>
+	<div class="na-title__line--long"></div>
+	<div class="na-title__line--med"></div>
+	<div class="na-title__line--short"></div>
+</section>
+
+<section class="na__bio">
+	<h2 class="na-bio__title">Bio</h2>
+	<article class="na-bio__text">
+		<p>As a designer: Web designer and developer who values empathy in my work as much as code, seeks systemic solutions over quick fixes, and is committed to leveraging aesthetics to improve the human condition. Extremely proficient at HTML5, CSS3, JavaScript (ECMA 6+), Python 3, information architecture, bringing art to code, and a sense of justice fit for the 21st century.</p>
+		<p>As a human: background in Economics, American Studies, and costuming (it's been a wild ride); minor addiction to red lipstick and black-and-white clothes; grew up on a farm. I really care about making websites better, and will try my very best to do that with yours.</p>
+	</article>
+</section>
+
+<section class="na__contact">
+	<h2 class="na-contact__title">Contact</h2>
+	<article class="na-contact__content">
+		{% assign contacts = site.data.contact | sort: 'order' %}
+		{% for contact in contacts %}
+		<ul class="na-contact__row">
+			<li class="na-contact__svg"><img alt="{{ contact.type }}" title="{{ contact.type }}" src="{{ contact.img | relative_url }}"></li>
+			<li class="na-contact__type">{{ contact.type }}:</li>
+			<li class="na-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
+		</ul>
+		{% endfor %}
+	</article>
+</section>

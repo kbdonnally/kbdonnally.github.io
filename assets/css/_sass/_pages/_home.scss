@@ -1,62 +1,122 @@
-/* Homepage: */
+/* New Home Styles: */
 
-/* Page wrapper: */
+// Section 0: Wrapper
 
 .home-wrapper {
+	grid-area: main;
 	position: relative;
 }
 
-/* Content wrapper: */
-
-.home-grid-wrapper {
+.home-main-content {
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-areas: 'h h h h h h'
-						 'b b b p p p'
-						 'a a a a a a'
-						 'c c c c r r'
-						 'e e e e e e';
+	grid-template-areas: 'name'
+						 'subhed'
+						 'info';
+	grid-template-columns: 1fr;
+	padding: 1.5rem 4.167%;
+
 }
 
-/* Header: */
+// Section 1: Name
 
-.home__header {
-	grid-area: h;
+.home__name {
+	grid-area: name;
+	position: relative;
+	h1 {
+		line-height: 1;
+		margin: .25em 0;
+		padding-bottom: .0625em;
+		font-size: 2.25rem;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-bottom: 2px solid $grayblue--light;
+	}
+	@media screen and (min-width: 600px) {
+		h1 {
+			font-size: 2.75rem;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
 }
 
-/* Bio: */
+// Section 2: Subheds
 
-.home__bio {
-	grid-area: b;
+.home__subhed {
+	grid-area: subhed;
+	position: relative;
+	display: grid;
+	grid-template-areas: 'one'
+						 'two'
+						 'three';
+	@media screen and (min-width: 768px) {
+		grid-template-areas: 'one one one one ...'
+							 '... two two two two'
+							 'three three three three three';
+	}
+
 }
 
-/* Portfolio: */
-
-.home__portfolio {
-	grid-area: p;
+// div
+[class*='home-subhed__'] {
+	h2 {
+		margin: .5rem;
+		margin-left: 0;
+		@media screen and (max-width: 600px) {
+			font-size: 1.25rem;
+		}
+	}
 }
 
-/* Call to action: */
-
-.home__cta {
-	grid-area: a;
+.home-subhed__one {
+	grid-area: one;
+	color: $medgray;
 }
 
-/* Contact: */
-
-.home__contact {
-	grid-area: c;
+.home-subhed__two {
+	grid-area: two;
+	color: $medgray;
 }
 
-/* Resume link: */
-
-.home__resume {
-	grid-area: r;
+.home-subhed__three {
+	grid-area: three;
+	color: $darkgray;
+	display: none;
 }
 
-/* Footer: */
 
-.home__footer {
-	grid-area: e; // e for end
+// Section 3: Information
+
+.home__info {
+	grid-area: info;
+
+}
+
+.home-info__hire-me {
+
+}
+
+.home-info__title {
+	h2 {
+		span {
+			color: $grayblue;
+		}
+	}
+}
+
+.home-info__list {
+
+}
+
+.home-info__portfolio {
+
+}
+
+.home-info__learn {
+
 }

@@ -1,6 +1,6 @@
 /* Default Layout Styles: */
 
-body {
+body.default {
 	display: grid;
 	@media screen and (max-width: 899px) {
 		grid-template-columns: 1fr;
@@ -22,7 +22,7 @@ body {
 .main-content-wrapper {
 	position: relative;
 	padding: 1.5rem 8.33%;
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		padding: 0 4.167%;
 	}
 	@media (min-width: 768px) and (max-width: 900px) {
