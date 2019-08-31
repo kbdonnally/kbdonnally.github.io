@@ -29,7 +29,7 @@
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
 	background-color: $mypurple;
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		margin: calc(1rem - 1px) auto;
 	}
 }
@@ -107,7 +107,7 @@
 	span {
 		display: none;
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		font-size: 18px;
 		span {
 			display: initial;
@@ -139,7 +139,7 @@
 	font-family: $futura;
 	font-size: 1.25rem;
 	background-color: $mypurple;
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		font-size: 18px;
 	}
 	@media screen and (min-width: 1440px) {

@@ -29,7 +29,7 @@
 		color: black;
 		background-color: white;
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		font-size: 18px;
 	}
 	@media screen and (min-width: 1440px) {
@@ -44,7 +44,7 @@
 	color: black;
 	border-bottom-width: 0px;
 	text-transform: none;
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		font-size: 2.25rem;
 	}
 	@media screen and (min-width: 1440px) {
@@ -61,7 +61,7 @@
 	span {
 		display: none;
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		font-size: 18px;
 		span {
 			display: initial;
@@ -157,7 +157,7 @@
 			}
 		}
 	}
-	@media screen and (max-width: 400px) {
+	@media screen and (max-width: 425px) {
 		p, ul li, ol li {
 			font-size: 18px;
 		}
