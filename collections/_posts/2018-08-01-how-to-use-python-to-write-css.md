@@ -2,7 +2,7 @@
 layout: post
 title: How to use Python to write your CSS classes
 categories: [css, python]
-date: 2018-08-01
+date: 2019-12-31
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque sit. Sagittis nisl rhoncus mattis rhoncus urna. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Tristique nulla aliquet enim tortor at auctor. Suspendisse potenti nullam ac tortor vitae. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Sodales neque sodales ut etiam sit amet. Cras tincidunt lobortis feugiat vivamus. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. At erat pellentesque adipiscing commodo elit at imperdiet. Vulputate enim nulla aliquet porttitor lacus luctus.
