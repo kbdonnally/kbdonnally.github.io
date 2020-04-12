@@ -1,0 +1,55 @@
+---
+title: New Home
+permalink: /new-home/
+layout: no-style-2
+---
+
+<main class="home">
+	
+	<section class="home__page-1">
+		<div class="home-1__content-wrapper">
+			<h1 class="home-1__page-title"><span>Katherine Donnally</span></h1>
+			<h2 class="home-1__subtitle"><span>Leftist & Designer</span></h2>
+		</div>
+	</section>
+
+	<section class="home__page-2">
+		
+
+		<article class="home-2__portfolio">
+			<h2 class="home-portfolio__title"><a href="#">Portfolio</a></h2>
+			<h3 class="home-portfolio__subtitle">Exploring the Web</h3>
+		</article>
+
+		<article class="home-2__blog">
+			<div class="home-blog__title-wrapper">
+				<h2 class="home-blog__title">Blog</h2>
+			</div>
+			<section class="home-blog__tech">
+				<h3 class="home-blog__tech-title"><a href="#">Tech</a></h3>
+				<h4 class="home-blog__tech-subhed">Fun with CSS, JavaScript, HTML, & Python</h4>
+			</section>
+			<section class="home-blog__politics">
+				<h3 class="home-blog__politics-title"><a href="#">Politics</a></h3>
+				<h4 class="home-blog__politics-subhed">Commentary & Analysis</h4>
+			</section>
+		</article>
+	</section>
+
+	<section class="home__page-3">
+		<section class="na__contact">
+			<h2 class="na-contact__title">Contact</h2>
+			<article class="na-contact__content">
+				{% assign contacts = site.data.contact | sort: 'order' %}
+				{% for contact in contacts %}
+				<ul class="na-contact__row">
+					<li class="na-contact__svg"><img alt="{{ contact.type }}" title="{{ contact.type }}" src="{{ contact.img | relative_url }}"></li>
+					<li class="na-contact__type">{{ contact.type }}:</li>
+					<li class="na-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
+				</ul>
+				{% endfor %}
+			</article>
+		</section>
+	</section>
+
+</main>

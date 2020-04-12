@@ -1,0 +1,124 @@
+/* New Home Styles: */
+
+.home {
+
+}
+
+.home__page-1 {
+	height: 100vh;
+}
+
+.home-1__content-wrapper {
+
+}
+
+.home-1__page-title {
+
+}
+
+.home-1__subtitle {
+
+}
+
+.home__page-2 {
+	display: grid;
+	grid-template-areas: 'portfolio'
+						 'blog';
+	min-height: 100vh;
+	@media screen and (min-width: 768px) {
+		grid-template-areas: 'portfolio blog';
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.home-2__portfolio {
+	grid-area: portfolio;
+	border: 1px solid red;
+}
+
+.home-portfolio__title {
+
+}
+
+.home-portfolio__subtitle {
+
+}
+
+.home-2__blog {
+	grid-area: blog;
+	display: grid;
+	grid-template-areas: 'blog'
+						 'politics'
+						 'tech';
+	border: 1px solid red;
+	@media screen and (min-width: 600px) {
+		grid-template-areas: 'blog blog'
+						 	 'politics tech';
+	}
+}
+
+.home-blog__title-wrapper {
+	grid-area: blog;
+}
+
+.home-blog__title {
+
+}
+
+.home-blog__tech {
+	grid-area: tech;
+}
+
+.home-blog__tech-title {
+
+}
+
+.home-blog__tech-subhed {
+
+}
+
+.home-blog__politics {
+	grid-area: politics;
+}
+
+.home-blog__politics-title {
+
+}
+
+.home-blog__politics-subhed {
+
+}
+
+.home__page-3 {
+ // filled with the 'na' content
+}
+
+// From 'New About' page:
+
+.na__contact {
+
+}
+
+.na-contact__title {
+
+}
+
+.na-contact__content {
+
+}
+
+.na-contact__row {
+
+}
+
+.na-contact__svg {
+
+}
+
+.na-contact__type {
+
+}
+
+.na-contact__user {
+
+}
