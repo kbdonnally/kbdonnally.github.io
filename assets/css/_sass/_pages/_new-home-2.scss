@@ -1,7 +1,13 @@
 /* New Home Styles: */
 
 .home {
-
+	a {
+		color: black;
+		transition: color .2s;
+		&:hover, &:focus {
+			color: purple;
+		}
+	}
 }
 
 .home__page-1 {
@@ -53,11 +59,21 @@
 	}
 }
 
+/* Page 2: */
+
 .home__page-2 {
 	display: grid;
 	grid-template-areas: 'portfolio'
 						 'blog';
 	min-height: 100vh;
+	h2 {
+		font-size: 3rem;	
+	}
+	h3 {
+		font-size: 2.25rem;
+	}
+	
+	text-transform: uppercase;
 	@media screen and (min-width: 768px) {
 		grid-template-areas: 'portfolio blog';
 		grid-template-columns: 1fr 1fr;
@@ -66,6 +82,10 @@
 
 .home-2__portfolio {
 	grid-area: portfolio;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid red;
 }
 
@@ -80,18 +100,35 @@
 .home-2__blog {
 	grid-area: blog;
 	display: grid;
+
 	grid-template-areas: 'blog'
 						 'politics'
 						 'tech';
+	justify-content: center;
+//	align-items: center;
 	border: 1px solid red;
 	@media screen and (min-width: 600px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 		grid-template-areas: 'blog blog'
 						 	 'politics tech';
+		height: 100vh;
+		text-align: center;
 	}
 }
 
 .home-blog__title-wrapper {
 	grid-area: blog;
+	border: 1px solid purple;
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lavender;
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+	}
 }
 
 .home-blog__title {
@@ -100,6 +137,18 @@
 
 .home-blog__tech {
 	grid-area: tech;
+	height: 25vh;
+	border: 1px solid purple;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+	background-color: lightsalmon;
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+		padding: 0 2rem;
+	}
 }
 
 .home-blog__tech-title {
@@ -112,6 +161,18 @@
 
 .home-blog__politics {
 	grid-area: politics;
+	height: 25vh;
+	padding: 0 1rem;
+	border: 1px solid purple;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: lightpink;
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+		padding: 0 2rem;
+	}
 }
 
 .home-blog__politics-title {
@@ -128,30 +189,115 @@
 
 // From 'New About' page:
 
-.na__contact {
+.home__contact {
 
 }
 
-.na-contact__title {
+.home-contact__title {
 
 }
 
-.na-contact__content {
+.home-contact__content {
 
 }
 
-.na-contact__row {
+.home-contact__row {
 
 }
 
-.na-contact__svg {
+.home-contact__svg {
 
 }
 
-.na-contact__type {
+.home-contact__type {
 
 }
 
-.na-contact__user {
+.home-contact__user {
 
+}
+
+// Contact //
+
+.home__contact {
+	width: 83.33%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	font-family: $poppins;
+	@media screen and (max-width: 425px) {
+		width: 91.67%;
+	}
+	@media screen and (min-width: 1440px) {
+	//	max-width: 75%;
+	}
+}
+
+.home-contact__title {
+// covered above
+	font-family: $poppins;
+}
+
+.home-contact__content {
+
+}
+
+// ul
+.home-contact__row {
+	position: relative;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.home-contact__svg {
+	display: flex;
+	align-items: center;
+	padding-right: 1.5rem;
+	img {
+		height: 2rem;
+	}
+	@media screen and (min-width: 1440px) {
+		img {
+			height: 39px;
+		}
+	}
+}
+
+.home-contact__type {
+	width: 5.5rem;
+	font-family: $poppins;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.4;
+	@media screen and (max-width: 425px) {
+		width: 5rem;
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		width: 6.5rem;
+		font-size: 24px;
+	}
+}
+
+.home-contact__user {
+	font-family: $poppins;
+	font-size: 20px;
+	line-height: 1.4;
+	a {
+		font-weight: 400;
+		color: black;
+		border-bottom: 2px solid $mypurple;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: black;
+			background-color: $mypurple;
+		}
+	}
+	@media screen and (max-width: 425px) {
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 24px;
+	}
 }
