@@ -66,6 +66,7 @@
 	grid-template-areas: 'portfolio'
 						 'blog';
 	min-height: 100vh;
+	color: $jet;
 	h2 {
 		font-size: 3rem;	
 	}
@@ -77,6 +78,12 @@
 	@media screen and (min-width: 768px) {
 		grid-template-areas: 'portfolio blog';
 		grid-template-columns: 1fr 1fr;
+		h2 {
+			font-size: 4rem;	
+		}
+		h3 {
+			font-size: 2.25rem;
+		}
 	}
 }
 
@@ -86,15 +93,23 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
+//	border: 1px solid red;
+	background-color: $champagne-pink;
 }
 
 .home-portfolio__title {
-
+	a {
+		color: black;
+		padding: 1rem;
+		transition: border-width .2s;
+		&:hover, &:focus {
+			border: 2px solid black;
+		}
+	}
 }
 
 .home-portfolio__subtitle {
-
+	display: none;
 }
 
 .home-2__blog {
@@ -106,7 +121,7 @@
 						 'tech';
 	justify-content: center;
 //	align-items: center;
-	border: 1px solid red;
+//	border: 1px solid red;
 	@media screen and (min-width: 600px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -120,12 +135,12 @@
 
 .home-blog__title-wrapper {
 	grid-area: blog;
-	border: 1px solid purple;
+//	border: 1px solid purple;
 	height: 25vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: lavender;
+	background-color: $lavender-mist;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
 	}
@@ -138,13 +153,13 @@
 .home-blog__tech {
 	grid-area: tech;
 	height: 25vh;
-	border: 1px solid purple;
+//	border: 1px solid purple;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	padding: 0 1rem;
-	background-color: lightsalmon;
+	background-color: $rose-quartz; // $tea-rose;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
 		padding: 0 2rem;
@@ -163,12 +178,12 @@
 	grid-area: politics;
 	height: 25vh;
 	padding: 0 1rem;
-	border: 1px solid purple;
+//	border: 1px solid purple;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: lightpink;
+	background-color: $tea-rose; // $rose-quartz;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
 		padding: 0 2rem;
