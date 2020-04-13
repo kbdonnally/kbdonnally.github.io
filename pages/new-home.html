@@ -16,16 +16,16 @@ layout: no-style-2
 	</section>
 
 	<section class="home__page-2">
-		
-
+		<!-- portfolio -->
 		<article class="home-2__portfolio">
-			<h2 class="home-portfolio__title"><a href="#">Portfolio</a></h2>
-			<h3 class="home-portfolio__subtitle">Exploring the Web</h3>
+			<h2 class="home-portfolio__title"><a href="{{ '/portfolio' | relative_url}}">Portfolio</a></h2>
+			<h3 class="home-portfolio__subtitle">View all projects</h3>
 		</article>
 
+		<!-- blog -->
 		<article class="home-2__blog">
 			<div class="home-blog__title-wrapper">
-				<h2 class="home-blog__title">Blog</h2>
+				<h2 class="home-blog__title"><a href="{{ '/blog' | relative_url}}">Blog</a></h2>
 			</div>
 			<section class="home-blog__tech">
 				<h3 class="home-blog__tech-title"><a href="#">Tech</a></h3>
@@ -39,15 +39,15 @@ layout: no-style-2
 	</section>
 
 	<section class="home__page-3">
-		<section class="na__contact">
-			<h2 class="na-contact__title">Contact</h2>
-			<article class="na-contact__content">
+		<section class="home__contact">
+			<h2 class="home-contact__title">Contact</h2>
+			<article class="home-contact__content">
 				{% assign contacts = site.data.contact | sort: 'order' %}
 				{% for contact in contacts %}
-				<ul class="na-contact__row">
-					<li class="na-contact__svg"><img alt="{{ contact.type }}" title="{{ contact.type }}" src="{{ contact.img | relative_url }}"></li>
-					<li class="na-contact__type">{{ contact.type }}:</li>
-					<li class="na-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
+				<ul class="home-contact__row">
+					<li class="home-contact__svg"><img alt="{{ contact.type }}" title="{{ contact.type }}" src="{{ contact.img | relative_url }}"></li>
+					<li class="home-contact__type">{{ contact.type }}:</li>
+					<li class="home-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
 				</ul>
 				{% endfor %}
 			</article>
