@@ -8,6 +8,9 @@
 			color: $isabelline;
 		}
 	}
+	h2 {
+		font-family: $acier-bat-gris;
+	}
 }
 
 .home__page-1 {
@@ -15,8 +18,8 @@
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	font-family: $montserrat;
-	font-weight: 900;
+	font-family: $acier-bat-gris;
+//	font-weight: 900;
 }
 
 .home-1__content-wrapper {
@@ -48,7 +51,7 @@
 }
 
 .home-1__page-title {
-	font-family: $montserrat;
+	font-family: $futura;
 	font-weight: 900;
 	border-width: 0;
 	@media screen and (min-width: 768px) {
@@ -82,7 +85,7 @@
 	}
 	h3 {
 		font-size: 2.25rem;
-		font-family: $montserrat;
+		font-family: $acier-bat-gris; // $futura-bold;
 		font-weight: 900;
 		a {
 			font-weight: 900;
@@ -116,10 +119,10 @@
 	font-family: $montserrat;
 	font-weight: 900;
 	border-right: 4px solid $jet;
+	background-color: $mylavender;
 	a {
 		font-weight: 900;
 	}
-	background-color: $shampoo;
 }
 
 .home-portfolio__title {
@@ -147,7 +150,7 @@
 						 'politics'
 						 'tech';
 	justify-content: center;
-	font-family: $montserrat;
+	font-family: $acier-bat-gris;
 	font-weight: 900;
 	a {
 		font-weight: 900;
@@ -157,7 +160,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		grid-template-areas: 'blog blog'
-						 	 'politics tech';
+						 	 'tech politics';
 		height: 100vh;
 		text-align: center;
 	}
@@ -165,12 +168,11 @@
 
 .home-blog__title-wrapper {
 	grid-area: blog;
-//	border: 1px solid purple;
 	height: 25vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: $pastel-purple;
+	background-color: $khaki;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
 	}
@@ -189,8 +191,8 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0 1rem;
-	background-color: $mtbatten-pink; // $tea-rose;
-	border-left: 4px solid $jet;
+	background-color: $fuchsia; // $tea-rose;
+	border-right: 4px solid $jet;
 	border-top: 4px solid $jet;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
@@ -199,7 +201,7 @@
 }
 
 .home-blog__tech-title {
-
+	font-family: $futura;
 }
 
 .home-blog__tech-subhed {
@@ -215,7 +217,7 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: $pale-gold; // $rose-quartz;
+	background-color: $robinsegg; // $rose-quartz;
 	border-top: 4px solid $jet;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
