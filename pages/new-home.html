@@ -42,6 +42,7 @@ layout: no-style-2
 		<section class="home__contact">
 			<h2 class="home-contact__title">Contact</h2>
 			<article class="home-contact__content">
+				<div class="home-contact__flex-wrapper">
 				{% assign contacts = site.data.contact | sort: 'order' %}
 				{% for contact in contacts %}
 				<ul class="home-contact__row">
@@ -50,6 +51,7 @@ layout: no-style-2
 					<li class="home-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
 				</ul>
 				{% endfor %}
+				</div>
 			</article>
 		</section>
 	</section>
