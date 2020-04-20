@@ -35,7 +35,71 @@ Marx's ideas specifically:
 	- "As for example the fact that the co-operation of a number of people, the fusion of many forces into one single force, creates, to use Marx's phrase, a 'new power', which is essentially different from the sum of its separate forces." (p77)
 		- Recall: Marx's discussion about a collective set of people being able to do way more than them isolated; animal spirits, etc., as well as concentrated means of production
 
+### Chapter 13: Negation of the Negation
 
+- Note: Capitalism is the middle part of this process: it negated feudalism, and now must be negated by socialism (I think?)
+- "Marx says: 'It is the **negation of the negation**. This re-establishes individual property, but on the basis of the acquisitions of the capitalist era, i.e., on the co-operation of free workers and their possession in common of the land and of the means of production produced by labor." (p81)
+	- **The transformation of scattered private property, arising from indivdual labor, into capitalist private property is, naturally, a process, incomparably more protracteed, arduous, and difficult, than the transformation of capitalistic private property, already practically resting on socialized production, into socialized property.**'" (p80-81)
+- "The state of things brought about by the expropriation of the expropriators is therefore characterized as the re-establishment of individual property, but *on the basis* of the social ownership of the land and of the means of production produced by labor itself." (p80)
+	- *They include nature this time; hadn't noticed before.*
+
+Marx & the negation:
+
+- "Before the capitalist era, petty industry existed, at least in England, on the basis of the private property of the laborer in his means of production." (p81)
+	- "The so-called primitive accumulation of capital consisted there in the expropriation of these immediate producers, that is, in the **dissolution of private property based on the labor of its owner**." (p81)
+- "This became possible because the petty industry referred to above is compatible only with narrow and primitive bounds of production and society and at a certain stage brings forth the material agencies for its own annihilation. **This annihilation, the transformation of the individual and scattered means of production into socially concentrated ones, forms the prehistory of capital.**" (p81)
+- Some optimism from Marx: "Concentration of the means of production and socialization of labor at last reach a point where they become incompatible with their capitalist integument." (p81)
+	- Excellent block quote from Marx, has phrase "one capitalist always kills many" in it
+
+Capitalism as a negation:
+
+- "Marx merely shows from history, and here states in a summarized form, that just as formerly petty industry by its very development necessarily created the **conditions of its own annihilation** i.e., of the expropriation of the small proprietors, so now **the capitalist mode of production has likewise itself created the material conditions from which it must**. The process is a historical one, and if it is at the same time a **dialectical process**, this is not Marx's fault, however annoying it may be to Herr Duhring." (p82)
+- Marx: "The capitalist mode of production and appropriation, hence the capitalist private property, is the **first negation of individual private property founded on the labor of the proprietor**. Capitalist production begets, with the inexorability of a process of nature, its own negation. It is the negation of the negation [etc.]". (p82)
+- "Thus, by characterizing the proces as the **negation of the negation**, Marx does not intend to prove that the process was historically necessary. On the contrary: only after he has proved from history that in fact **the process has partially already occurred, and partially must occur in the future**, he in addition characterizes it as a process which develops in accordance with a definite dialectical law." (p82-83)
+
+What is negation of the negation?
+
+*Examples from the text:*
+
+- Example 1: barley
+	- Start out with a seed, plant it and it grows
+	- The original barley seed is destroyed, but through it new barley seeds are created and can be similarly planted (and those seeds will be destroyed in the process too, etc., etc.)
+- Example 2: dahlias or orchids
+	- Treat it like a gardener would, and get seeds as a result of this negation of the negation, and these seeds will be even more beautiful than the flowers bred before
+- Example 3: insects & butterflies
+	- Similar negation as the plants
+	- The egg is negated at the beginning of the butterfly's life (it hatches and destroys it)
+	- Once mating season has passed and they lay their own eggs, they, too, die and are negated
+	- Negation of the negation = egg &rArr; butterfly &rArr; egg ...
+
+*Engels' explainer:*
+
+- "We are not concerned at the moment with the fact that with other plants and animals the process does not take such a simple form, that before they die they produce seeds, eggs or offspring not once but many times; our purpose here is onlly to show that the negation of the negation *really does take place* in both kingdoms of the natural world." (p83)
+	- I.e., both plants and animals
+- "Furthermore, the whole of geology is a series of negated negations, a series of successive chatterings of old and deposits of new rock formations." (p84)
+- "It is the same in mathematics. Let us take any algebraic quantity whatever: for example, a. If this is negated, we get -a (minus a). If we negate that negation, by multiplying -a by -a, we get +a<sup>2</sup>, i.e., the original positive quantity, but at a higher degree, raised to its second power. In this case it also makes no difference that we can obtain the same a<sup>2</sup> by multiplying the positive a by itself, thus likewise getting a<sup>2</sup>."
+	- "For the negated version is so securelly entrenched in a<sup>2</sup>"that the latter always has two square roots, namely, *a* and *-a*.
+- *Come back to the math section on page 84*
+
+Historical development:
+
+- "It is the same in history, as well. All civilized peoples begin with the common ownership of the land. With all peoples who have passed a certain primitive stage, this common ownership becomes in the course of the development of agriculture a fetter on production." (p84)
+	- "It is abolished, **negated**, and after a longer or shorter series of intermediate is transformed into private property. But at a higher stage of agricultural development, brought about by private land itself, private property conversely becomes a fetter on production, as is the case today both with small and large landownership." (p85)
+- "The demand that it, too, should be negated, that it should once again be transformed into common property, necessarily arises."
+- "But this demand does not mean the restoration of the aboriginal common ownership, but the institution of a **far higher and more developed form of possession in common** which, far from being a hindrance to production, on the contrary for the first time will free production from all fetters and enable it to make full use of modern chemical discoveries and mechanical inventions." (p85)
+
+Summary:
+
+- "When I say that all these processes [discussed above] are a negation of the negation, I bring them all together under this one **law of motion**, and for this very reason I leave out of account the specific peculiarities of each individual process. **Dialectics, however, is nothing more than the science of the general laws of motion and development of nature, human society and thought.**" (p86)
+	- *Excellent summary definiton*
+- "Negation in dialectics does not mean simply saying no, or declaring that something does not exist, or destroying it in any way one likes. ... I must not only negate, but also **sublate the negation**. **I must therefore so arrange the first negation that the second remains or becomes possible.**" 
+	- Can't just smash a thing or make it unusable, since then "I have carried out the first part of the action, but made the second part impossible." (p86)
+- "**Every kind of thing therefore has a peculiar way of being negated in such a manner that it gives rise to a development, and it is just the same with every kind of conception or idea.**" (p86)
+	1. This reminds me or me trying to rebuild myself after depression (just have to make myself into the best version, i.e., the one ready for what history has to throw at them)
+	2. Classical Marxism is currently giving birth to a whole new realm of thought (ecosocialism sort of? I don't think it's that visible yet but I can feel something coming, and I think we all do [on Twitter at least])
+- "The law of **negation of the negation**, which is unconsciously operative in nature and history and, until it has been recognized, also in our heads, was only first clearly formulated by Hegel." (p87
+
+*~ The End ~*
 ## Ideas
 
 - Use the water quantity/quality thing as an example
