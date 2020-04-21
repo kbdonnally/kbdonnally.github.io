@@ -88,7 +88,8 @@
 .home__page-2 {
 	display: grid;
 	grid-template-areas: 'portfolio'
-						 'blog';
+						 'blog'
+						 'intake';
 	min-height: 100vh;
 	font-family: $acier-bat-gris;
 	font-weight: 400;
@@ -117,7 +118,9 @@
 	
 	text-transform: uppercase;
 	@media screen and (min-width: 768px) {
-		grid-template-areas: 'portfolio blog';
+		grid-template-areas: 'portfolio blog'
+							 'portfolio blog'
+							 'intake blog';
 		grid-template-columns: 1fr 1fr;
 		h2 {
 			font-size: 4rem;	
@@ -176,7 +179,7 @@
 	@media screen and (min-width: 600px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 2fr;
 		grid-template-areas: 'blog blog'
 						 	 'tech politics';
 		height: 100vh;
@@ -203,7 +206,6 @@
 .home-blog__tech {
 	grid-area: tech;
 	height: 25vh;
-//	border: 1px solid purple;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -250,6 +252,19 @@
 .home-blog__politics-subhed {
 
 }
+
+.home-2__intake {
+	grid-area: intake;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsla(169, 62%, 72%, 1);
+	border-top: 4px solid black;
+	border-right: 4px solid black;
+}
+
+
+/* Page 3 */
 
 .home__page-3 {
  // filled with the 'na' content
