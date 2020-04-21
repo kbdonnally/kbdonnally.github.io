@@ -318,7 +318,8 @@
 	justify-content: center;
 //	align-items: center;
 	padding: 2rem;
-	border: 4px solid black;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
 }
 
 .home-contact__flex-wrapper {
@@ -350,7 +351,7 @@
 
 .home-contact__type {
 	width: 5.5rem;
-	font-family: $montserrat;
+	font-family: $futura-bold;
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 1.4;
@@ -365,7 +366,7 @@
 }
 
 .home-contact__user {
-	font-family: $montserrat;
+	font-family: $futura;
 	font-size: 20px;
 	line-height: 1.4;
 	a {
