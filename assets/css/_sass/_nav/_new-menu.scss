@@ -5,9 +5,12 @@
 .menu-wrapper {
 	display: flex;
 	justify-content: space-between;
-	height: 60px;
+	height: 56px;
 	width: 100%;
-	background-color: $mypurple;
+	background-color: black;
+	@media screen and (min-width: 768px) {
+		height: 64px;
+	}
 	@media screen and (min-width: 1440px) {
 		height: 70px;
 		a {
@@ -33,14 +36,25 @@
 		font-weight: 700;
 		line-height: 1;
 		color: white;
-		transition: color .3s, background-color .3s;
+		transition: color .3s, background-color .3s, stroke .3s, fill .3s;
 		&:hover, &:focus {
-			color: $mypurple;
 			background-color: black;
 			border-bottom-width: 0;
+			transition: stroke .3s, fill .3s;
+			.st0 {
+					stroke: $mylavender;
+					fill: $mylavender;
+			}
 		}
-		img {
+		img, svg {
 			height: 1.5rem;
+			transition: stroke .3s, fill .3s;
+			&:hover, &:focus {
+				.st0 {
+					stroke: $mylavender;
+					fill: $mylavender;
+				}
+			}
 			@media screen and (min-width: 768px) {
 				height: 1.75rem;
 			}
@@ -71,7 +85,7 @@
 		color: white;
 		transition: color .3s background-color .3s;
 		&:hover, &:focus {
-			color: $mypurple;
+			color: $mylavender;
 			background-color: black;
 			border-bottom-width: 0;
 		}
