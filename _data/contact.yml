@@ -3,20 +3,20 @@
 # email
 - username: kbdonnally@gmail.com
   url: 'mailto:kbdonnally@gmail.com'
-  img: 'assets/img/svg/envelope-outline-lavender.svg'
+  img: 'assets/img/svg/envelope-outline-green.svg'
   type: Email
   order: 1
 
 # twitter
 - username: '@kbdonnally'
   url: https://twitter.com/kbdonnally
-  img: 'assets/img/svg/twitter-lavender.svg'
+  img: 'assets/img/svg/twitter-green.svg'
   type: Twitter
   order: 3
 
 # github
 - username: github.com/kbdonnally
   url: https://github.com/kbdonnally
-  img: 'assets/img/svg/github-lavender.svg'
+  img: 'assets/img/svg/github-green.svg'
   type: GitHub
   order: 2
