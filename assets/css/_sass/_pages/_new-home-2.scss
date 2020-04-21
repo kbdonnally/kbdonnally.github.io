@@ -2,11 +2,11 @@
 
 .home {
 	a {
-		color: black;
+		color: $jet;
 		transition: color .2s;
 		&:hover, &:focus {
 		//	color: $isabelline;
-			border-bottom: 0 solid black;
+			border-bottom: 0 solid $jet;
 		}
 	}
 	h2, h3 {
@@ -23,7 +23,7 @@
 }
 
 .home__page-1 {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -48,8 +48,8 @@
 	justify-content: center;
 	align-items: center;
 	padding: 2rem 3rem;
-	border-top: 4px solid black;
-	border-bottom: 4px solid black;
+	border-top: 4px solid $jet;
+	border-bottom: 4px solid $jet;
 	@media screen and (max-width: 500px) {
 		margin: 1rem;
 	}
@@ -66,12 +66,13 @@
 	border-width: 0;
 	@media screen and (min-width: 600px) {
 		font-size: 3rem;
-	}
-	@media screen and (min-width: 768px) {
-		font-size: 4rem;
 		span {
 			display: none;
 		}
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+		
 	}
 }
 
@@ -90,18 +91,21 @@
 	}
 }
 
-/* Page 2: */
+/* ///////////// Page 2: ////////////// */
 
 .home__page-2 {
 	display: grid;
+	grid-template-rows: repeat(3, minmax(33.33vh, auto));
 	grid-template-areas: 'portfolio'
 						 'blog'
 						 'intake';
 	min-height: 100vh;
 	font-family: $acier-bat-gris;
 	font-weight: 400;
+	text-transform: uppercase;
 	color: $jet;
-	border: 4px solid $jet;
+	border-top: 4px solid $jet;
+	border-bottom: 4px solid $jet;
 	h2 {
 		font-size: 3rem;	
 		font-weight: 400;
@@ -122,8 +126,10 @@
 		font-weight: 400;
 		font-style: italic;
 	}
-	
-	text-transform: uppercase;
+	@media screen and (max-width: 600px) {
+		
+		border-right: 4px solid $jet;
+	}
 	@media screen and (min-width: 768px) {
 		grid-template-areas: 'portfolio blog'
 							 'portfolio blog'
@@ -146,10 +152,21 @@
 	align-items: center;
 	font-family: $montserrat;
 	font-weight: 900;
-	border-right: 4px solid $jet;
+	
 	background-color: $mylavender;
 	a {
 		font-weight: 900;
+	}
+	@media screen and (min-width: 600px) {
+		border-right: 4px solid $jet;
+		border-left: 4px solid $jet;
+	}
+	@media screen and (max-width: 768px) {
+	//	border-top: 4px solid $jet;
+		border-left: 4px solid $jet;
+	}
+	* {
+		margin: .5rem;
 	}
 }
 
@@ -157,31 +174,45 @@
 	font-family: $montserrat;
 	font-weight: 900;
 	a {
-		color: black;
+		color: $jet;
 		padding: 1rem;
 	//	transition: border-width .2s;
 		&:hover, &:focus {
-	//		border: 2px solid black;
+	//		border: 2px solid $jet;
 		}
 	}
 }
 
 .home-portfolio__subtitle {
-	display: none;
+
+}
+
+.home-portfolio__subhed {
+	text-align: center;
 }
 
 .home-2__blog {
 	grid-area: blog;
 	display: grid;
-
-	grid-template-areas: 'blog'
-						 'politics'
-						 'tech';
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 'blog blog'
+						 'politics tech';
 	justify-content: center;
 	font-family: $acier-bat-gris;
 	font-weight: 900;
+	h2, h4 {
+		margin: .5rem;
+	}
 	a {
 		font-weight: 900;
+	}
+	@media screen and (max-width: 600px) {
+		min-height: 67vh;
+		border-top: 4px solid $jet;
+	}
+	@media screen and (max-width: 768px) {
+		border-top: 4px solid $jet;
+		border-left: 4px solid $jet;
 	}
 	@media screen and (min-width: 600px) {
 		display: grid;
@@ -196,13 +227,15 @@
 
 .home-blog__title-wrapper {
 	grid-area: blog;
-	height: 25vh;
+	min-height: 25vh;
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	background-color: $khaki;
 	@media screen and (min-width: 600px) {
 		height: 50vh;
+		border-right: 4px solid $jet;
 	}
 }
 
@@ -212,18 +245,22 @@
 
 .home-blog__tech {
 	grid-area: tech;
-	height: 25vh;
+	min-height: 25vh;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	padding: 0 1rem;
 	background-color: $fuchsia; // $tea-rose;
-	border-right: 4px solid $jet;
+	
 	border-top: 4px solid $jet;
+	@media screen and (max-width: 599px) {
+		border-left: 4px solid $jet;
+	}
 	@media screen and (min-width: 600px) {
 		height: 50vh;
 		padding: 0 2rem;
+		border-right: 4px solid $jet;
 	}
 }
 
@@ -232,12 +269,15 @@
 }
 
 .home-blog__tech-subhed {
-
+	@media screen and (max-width: 600px) {
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .home-blog__politics {
 	grid-area: politics;
-	height: 25vh;
+	min-height: 25vh;
 	padding: 0 1rem;
 //	border: 1px solid purple;
 	display: flex;
@@ -249,6 +289,7 @@
 	@media screen and (min-width: 600px) {
 		height: 50vh;
 		padding: 0 2rem;
+		border-right: 4px solid $jet;
 	}
 }
 
@@ -257,7 +298,10 @@
 }
 
 .home-blog__politics-subhed {
-
+	@media screen and (max-width: 600px) {
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .home-2__intake {
@@ -266,8 +310,27 @@
 	justify-content: center;
 	align-items: center;
 	background-color: hsla(169, 62%, 72%, 1);
-	border-top: 4px solid black;
-	border-right: 4px solid black;
+	border-top: 4px solid $jet;
+	border-right: 0px solid $jet;
+	@media screen and (max-width: 600px) {
+		border-left: 4px solid $jet;
+	}
+	@media screen and (min-width: 600px) {
+		border-top: 4px solid $jet;
+		border-right: 4px solid $jet;
+		border-left: 4px solid $jet;
+	}
+}
+
+.home-intake__title-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	
+	* {
+		margin: .5rem;
+	}
 }
 
 
@@ -340,8 +403,8 @@
 	justify-content: center;
 //	align-items: center;
 	padding: 2rem;
-	border-top: 4px solid black;
-	border-bottom: 4px solid black;
+	border-top: 4px solid $jet;
+	border-bottom: 4px solid $jet;
 }
 
 .home-contact__flex-wrapper {
@@ -393,11 +456,11 @@
 	line-height: 1.4;
 	a {
 		font-weight: 400;
-		color: black;
+		color: $jet;
 		border-bottom: 2px solid $mylavender;
 		transition: background-color .3s;
 		&:hover, &:focus {
-			color: black;
+			color: $jet;
 			background-color: $mylavender;
 		}
 	}
