@@ -159,9 +159,9 @@
 	a {
 		color: black;
 		padding: 1rem;
-		transition: border-width .2s;
+	//	transition: border-width .2s;
 		&:hover, &:focus {
-			border: 2px solid black;
+	//		border: 2px solid black;
 		}
 	}
 }
