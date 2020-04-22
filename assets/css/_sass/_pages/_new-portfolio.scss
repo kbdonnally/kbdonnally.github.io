@@ -12,6 +12,7 @@
 
 .portfolio__title {
 	color: black;
+	padding-bottom: 2rem;
 }
 
 .portfolio-title__text {
@@ -131,7 +132,7 @@
 		transition: background-color .3s;
 		&:hover, &:focus {
 			color: black;
-			background-color: $mypurple;
+			background-color: $mylavender;
 		}
 	}
 	@media screen and (max-width: 425px) {
@@ -165,7 +166,7 @@
 }
 
 .portfolio-meta__note {
-	color: $mypurple;
+	color: $mylavender;
 }
 
 .portfolio-proj__divider {
@@ -175,7 +176,7 @@
 [class*="portfolio-divider__line--"] {
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
-	background-color: $mypurple;
+	background-color: $mylavender;
 	@media screen and (max-width: 425px) {
 		margin: calc(1rem - 1px) auto;
 	}

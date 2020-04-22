@@ -78,11 +78,11 @@ p, ul, ol, li, blockquote, section, nav, footer {
 a {
 	text-decoration: none;
 	font-weight: bold;
-	color: $grayblue;
+	//color: $grayblue;
 	transition: .3s color, .3s border;
 	&:hover, &:focus {
-		color: $textgray;
-		border-bottom: 1px solid $textgray;
+	//	color: $textgray;
+	//	border-bottom: 1px solid $textgray;
 	}
 }
 
