@@ -18,7 +18,8 @@
 	margin: .25em auto;
 	margin-top: .5em;
 	font-size: 3rem;
-	font-family: $futura-bold;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
 	text-align: center;
 	border-bottom-width: 0px;
 	@media screen and (min-width: 768px) {
@@ -36,7 +37,7 @@
 [class*="portfolio-title__line--"] {
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
-	background-color: $mypurple;
+	background-color: $jet; // $midbluegreen;
 	@media screen and (max-width: 425px) {
 		margin: calc(1rem - 1px) auto;
 	}
