@@ -22,8 +22,11 @@
 	font-weight: 400;
 	text-align: center;
 	border-bottom-width: 0px;
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 600px) {
 		font-size: 4rem;
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 4.5rem;
 	}
 	@media screen and (min-width: 900px) {
 		margin: .25em auto;
