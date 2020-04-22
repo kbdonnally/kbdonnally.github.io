@@ -28,7 +28,7 @@
 [class*="blog-title__line--"] {
 	height: 2px;
 	margin: calc(1.5rem - 1px) auto;
-	background-color: $mypurple;
+	background-color: $jet;
 	@media screen and (max-width: 425px) {
 		margin: calc(1rem - 1px) auto;
 	}
@@ -69,7 +69,7 @@
 
 // article
 .blog-posts__post {
-	border: 2px solid $mypurple;
+	border: 2px solid $mylavender;
 	margin: 1.5rem 0;
 	padding: 1.5rem;
 	@media screen and (min-width: 900px) {
@@ -86,7 +86,7 @@
 		color: black;
 		transition: background-color .3s;
 		&:hover, &:focus {
-			background-color: $mypurple;
+			background-color: $mylavender;
 			border-bottom-width: 0;
 		}
 	}
@@ -103,7 +103,7 @@
 	font-family: $source-sans;
 	font-weight: 400;
 	font-size: 1.25rem;
-	color: $mypurple;
+	color: $mylavender;
 	span {
 		display: none;
 	}
@@ -138,7 +138,7 @@
 	margin-right: 4px;
 	font-family: $futura;
 	font-size: 1.25rem;
-	background-color: $mypurple;
+	background-color: $mylavender;
 	@media screen and (max-width: 425px) {
 		font-size: 18px;
 	}
@@ -181,7 +181,8 @@
 
 .post-read__more {
 	padding: 1px 8px;
-	font-family: $futura-bold;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
 	font-size: 1rem;
 	text-transform: uppercase;
 	color: white;
