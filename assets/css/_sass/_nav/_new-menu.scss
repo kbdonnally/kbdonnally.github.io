@@ -46,8 +46,8 @@
 			border-bottom-width: 0;
 			transition: stroke .3s, fill .3s;
 			.st0 {
-					stroke: $mylavender;
-					fill: $mylavender;
+					stroke: white;
+					fill: white;
 			}
 		}
 		img, svg {
@@ -55,8 +55,8 @@
 			transition: stroke .3s, fill .3s;
 			&:hover, &:focus {
 				.st0 {
-					stroke: $mylavender;
-					fill: $mylavender;
+					stroke: white;
+					fill: white;
 				}
 			}
 			@media screen and (min-width: 768px) {
