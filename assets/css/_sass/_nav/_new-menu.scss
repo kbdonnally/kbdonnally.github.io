@@ -3,16 +3,20 @@
 // Wrapper //
 
 .menu-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
 	display: flex;
 	justify-content: space-between;
-	height: 56px;
+	height: 52px;
 	width: 100%;
 	background-color: black;
+	z-index: 500;
 	@media screen and (min-width: 768px) {
-		height: 64px;
+	///	height: 56px;
 	}
 	@media screen and (min-width: 1440px) {
-		height: 70px;
+		height: 60px;
 		a {
 			font-size: 1.25rem;
 		}
