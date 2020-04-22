@@ -133,7 +133,7 @@
 		position: relative;
 		padding-left: 1.25em;
 		list-style-type: none;
-		li {
+		> li {
 			position: relative;
 		//	font-size: 20px;
 			&::before {
