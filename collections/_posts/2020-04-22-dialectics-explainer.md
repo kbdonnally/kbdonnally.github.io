@@ -1,3 +1,4 @@
+---
 layout: post
 title: An Introduction to Dialectics
 categories: [philosophy, socialism]
