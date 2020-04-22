@@ -5,6 +5,8 @@ categories: [philosophy, socialism]
 date: 2020-04-20
 ---
 
+*Dialectics, however, is nothing more than the science of the general laws of motion and development of nature, human society and thought. - Frederick Engels*
+
 ## Planning Phase:
 
 - *Anti-Duhring:*
