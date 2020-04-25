@@ -71,3 +71,18 @@ if (document.querySelector('.new-home-wrapper')) {
 		inThatCase.scrollIntoView({behavior: 'smooth'});
 	}
 }
+
+/* ------------------------------------------------- */
+
+// menu
+
+if (document.querySelector('.menu-wrapper')) {
+	let hamburgerWrapper = document.querySelector('.menu__hamburger-link');
+	let links = document.querySelector('.menu__page-list');
+
+	hamburgerWrapper.addEventListener('click', openMenu);
+
+	function openMenu(e) {
+		let parent = e.target.parentNode;
+	}
+}

@@ -116,6 +116,10 @@
 	display: none;
 }
 
+.menu__page-list--show {
+	display: initial;
+}
+
 .menu-list__item {
 	a {
 		margin-right: 1.5rem;
