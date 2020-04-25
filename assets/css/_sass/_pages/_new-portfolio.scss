@@ -124,10 +124,13 @@
 .portfolio-meta__name {
 	margin: .25em 0;
 	margin-bottom: 0;
-	font-family: $futura-bold;
-	font-size: 3rem;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
+	font-size: 2rem;
 	text-transform: uppercase;
 	a {
+		font-family: $acier-bat-gris;
+		font-weight: 400;
 		color: black;
 		transition: background-color .3s;
 		&:hover, &:focus {
@@ -135,17 +138,19 @@
 			background-color: $mylavender;
 		}
 	}
-	@media screen and (max-width: 425px) {
-		font-size: 2rem;
+	@media screen and (min-width: 425px) {
+		font-size: 3rem;
+	}
+	@media screen and (min-width: 900px) {
+		font-size: 3.5rem;
 	}
 	@media screen and (min-width: 1440px) {
-		font-size: 3.5rem;
+		font-size: 4.5rem;
 	}
 }
 
 .portfolio-meta__sponsor, .portfolio-meta__role, .portfolio-meta__note {
 	font-family: $source-sans;
-	font-size: 1.375rem;
 	font-weight: 400;
 	margin: 2px;
 	@media screen and (max-width: 425px) {

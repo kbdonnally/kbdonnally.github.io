@@ -33,6 +33,14 @@ order: 1
 		{% for project in projects %}
 		<!-- project -->
 		<section class="portfolio-gallery__project">
+			<!-- project information -->
+			<section class="portfolio-proj__metadata">
+				<h2 class="portfolio-meta__name"><a href="{{ project.url }}">{{ project.site-name }}</a></h2>
+				<h4 class="portfolio-meta__sponsor">{{ project.sponsor }}, {{ project.date }}</h4>
+				<h4 class="portfolio-meta__role">{{ project.full-role }}</h4>
+				<h4 class="portfolio-meta__note">// Click images to enlarge.</h4>
+			</section>
+			
 			<!-- project pics -->
 			<ul class="portfolio-proj__pics">
 				{% for proj in images %} <!-- look at all image objects -->
@@ -56,13 +64,7 @@ order: 1
 				{% endfor %}
 			</ul>
 
-			<!-- project information -->
-			<section class="portfolio-proj__metadata">
-				<h2 class="portfolio-meta__name"><a href="{{ project.url }}">{{ project.site-name }}</a></h2>
-				<h4 class="portfolio-meta__sponsor">{{ project.sponsor }}, {{ project.date }}</h4>
-				<h4 class="portfolio-meta__role">{{ project.full-role }}</h4>
-				<h4 class="portfolio-meta__note">// Click images to enlarge.</h4>
-			</section>
+			
 		</section> <!-- end project -->
 
 		<!-- divider -->
