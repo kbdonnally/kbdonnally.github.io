@@ -69,6 +69,40 @@
 	}
 }
 
+.menu__hamburger-link {
+	position: relative;
+	top: 20%;
+	justify-self: flex-end;
+	display: flex;
+	align-items: center;
+	height: 1.5rem;
+	transition: stroke .3s, fill .3s;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	svg {
+		height: 100%;
+	}
+	&:hover, &:focus {
+		.st0 {
+			stroke: white;
+			fill: white;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		height: 1.75rem;
+	}
+	@media screen and (min-width: 1200px) {
+		height: 2rem;
+	}
+	div {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+}
+
 // Pages //
 
 .menu__page-list {
@@ -79,6 +113,7 @@
 	list-style-type: none;
 	padding-left: 0;
 	margin-left: 0;
+	display: none;
 }
 
 .menu-list__item {

@@ -2,6 +2,11 @@
 	<section class="menu__home-link"> <!-- turn into logo -->
 		<a href="{{ site.url}}" aria-label="Home page link" title="KD - Home">{% include logo-lavender.svg %}</a>
 	</section>
+
+	<section class="menu__hamburger-link">
+		<div>{% include blocky-hamburger-menu-1.svg %}</div>
+	</section>
+
 	<ul class="menu__page-list">
 	{% assign pages = site.pages | where: 'menu', 'true' | sort: 'order' %}
 	{% for page in pages %}
