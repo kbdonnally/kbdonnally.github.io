@@ -152,8 +152,9 @@
 .portfolio-meta__sponsor, .portfolio-meta__role, .portfolio-meta__note {
 	font-family: $source-sans;
 	font-weight: 400;
+	font-size: 1rem;
 	margin: 2px;
-	@media screen and (max-width: 425px) {
+	@media screen and (min-width: 900px) {
 		font-size: 18px;
 	}
 	@media screen and (min-width: 1440px) {
@@ -207,4 +208,31 @@
 
 .portfolio-divider__line--left {
 
+}
+
+// -------------------------------------------- //
+
+
+// Experiments section //
+
+.portfolio__experiments {
+	width: 91.67%;
+	margin: 0 auto;
+	font-family: $source-sans;
+}
+
+.portfolio-experiments__title {
+	margin: .25em 0;
+	margin-bottom: .125em;
+	font-family: $acier-bat-solid;
+	font-weight: 400;
+	font-size: 3rem;
+	text-transform: uppercase;
+	border-bottom: 2px solid $midbluegreen;
+	@media screen and (min-width: 900px) {
+		font-size: 4rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
 }
