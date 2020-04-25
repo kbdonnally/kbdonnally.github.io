@@ -37,7 +37,7 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	height: calc(100vh - 64px);
+	height: 100vh;
 	margin: 0;
 
 }
@@ -64,6 +64,7 @@
 	font-family: $acier-bat-gris;
 	font-weight: 400;
 	border-width: 0;
+	color: $jet;
 	@media screen and (min-width: 600px) {
 		font-size: 3rem;
 		span {
@@ -74,12 +75,17 @@
 		font-size: 4rem;
 		
 	}
+	@media screen and (min-width: 1200px) {
+		align-self: center;
+		font-size: 5rem;
+	}
 }
 
 .home-1__subtitle {
 	align-self: flex-start;
 	font-size: 2rem;
 	margin: 0;
+//	color: $mylavender;
 	@media screen and (min-width: 600px) {
 		font-size: 2.5rem;
 	}
@@ -88,6 +94,11 @@
 		span {
 			display: none;
 		}
+	}
+	@media screen and (min-width: 1200px) {
+		align-self: center;
+		font-size: 3.5rem;
+		
 	}
 }
 
