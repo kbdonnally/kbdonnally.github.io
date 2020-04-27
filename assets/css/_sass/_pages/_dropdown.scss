@@ -44,3 +44,19 @@ ul li ul  {
 	position: relative;
 	right: 0;
 }
+
+ul.dropdown {
+	margin: 0;
+	padding: 0;
+	li {
+		width: 97.64px;
+	}
+}
+
+li.dropdown-wrapper {
+	text-align: right;
+}
+
+//ul li ul li:nth-of-type(2) {
+//	text-align: left;
+//}
