@@ -60,3 +60,69 @@ li.dropdown-wrapper {
 //ul li ul li:nth-of-type(2) {
 //	text-align: left;
 //}
+
+/* li.dropdown-home {
+	padding: 1rem .5rem;
+	background-color: lavender;
+} */
+
+ul {
+	height: 56px;
+	background-color: black;
+}
+
+.dropdown-home, .dropdown-wrapper {
+	svg {
+		height: 24px;
+	}
+}
+
+.dropdown-home {
+	padding: 0 .5rem;
+	background-color: black;
+	svg {
+		height: 28px;
+	}
+
+}
+
+.dropdown-wrapper {
+	position: relative;
+	padding: 0 .5rem;
+	padding-bottom: 1rem;
+	margin-bottom: 8px;
+	min-height: 24px;
+	background-color: black;
+	a:first-of-type {
+		display: block;
+		height: 56px;
+	}
+	svg {
+		height: 28px;
+	}
+}
+
+.dropdown {
+	position: absolute;
+	right: 0;
+	margin-top: 24px;
+	background-color: black;
+	///transform: translateY(1rem);
+	li {
+		position: relative;
+		right: 0;
+		height: 40px;
+		display: block;
+		padding: .5rem;
+		padding-left: .5rem;
+		font-family: $futura;
+		text-align: left;
+		background-color: black;
+		transform: translateX(-1.6rem) translateY(-1rem);
+		border-top: 1px solid $medgray;
+		a {
+			color: white;
+		}
+	}
+}
+
