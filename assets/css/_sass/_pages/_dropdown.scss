@@ -122,6 +122,17 @@ ul {
 		display: block;
 		height: 56px;
 	}
+	transition: color .3s, background-color .3s, stroke .3s, fill .3s;
+	border: 0 solid black;
+	&:hover, &:focus {
+		background-color: black;
+		border-bottom-width: 0;
+		transition: stroke .3s, fill .3s;
+		.st0 {
+				stroke: white;
+				fill: white;
+		}
+	}
 	svg {	right: 0;
 
 		height: 28px;
@@ -159,12 +170,8 @@ li.dropdown-home {
 	position: relative;
 	height: 40px;
 	display: block;
-//	padding: .5rem 0;
 	background-color: black;
-//	transform: translateX(-1.6rem) translateY(-1rem);
-
 	a {
 		color: white;
-
 	}
 }
