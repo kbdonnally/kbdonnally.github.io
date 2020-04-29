@@ -1,5 +1,33 @@
 /* Intake Styles: */
 
+.intake__title {
+	color: black;
+	padding-bottom: 2rem;
+}
+
+.intake-title__text {
+	margin: .25em auto;
+	margin-top: .5em;
+	font-size: 3.5rem;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
+	text-align: center;
+	border-bottom-width: 0px;
+	@media screen and (min-width: 600px) {
+		font-size: 3.5rem;
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 4.5rem;
+	}
+	@media screen and (min-width: 900px) {
+		margin: .25em auto;
+		font-size: 5rem;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 5rem;
+	}
+}
+
 .intake__iframe {
 	position: relative;
 	width: 100%;
