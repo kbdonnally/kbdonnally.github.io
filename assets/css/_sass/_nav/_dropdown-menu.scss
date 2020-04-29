@@ -1,26 +1,31 @@
 // CSS Tricks' solution:
 
-li {
+.dropdown-outer-ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 5;
+	li {
 	display: block;
 	transition-duration: .5s;
+	}
+
+	li:hover { 
+		cursor: pointer
+	}
 }
 
-li:hover { 
-	cursor: pointer
-}
-
-ul li ul {
+ul.dropdown-outer-ul li ul {
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
 	transition: all .5 ease;
-	margin-top: 1rem;
-	left: 0;
 	display: none;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
+ul.dropdown-outer-ul li:hover > ul,
+ul.dropdown-outer-ul li ul:hover {
 	visibility: visible;
 	opacity: 1;
 	display: block;
@@ -48,7 +53,7 @@ ul.dropdown-outer-ul li ul  {
 li.dropdown-wrapper {
 	text-align: right;
 	a {
-		height: calc(56px-14px);
+		height: 40px !important;
 	}
 }
 
@@ -160,7 +165,7 @@ ul.dropdown {
 	right: 0;
 	margin: 0;
 	padding: 0;
-	transform: translateX(2rem) translateY(-1rem);
+	transform: translateX(1.5rem); // translateY(-1rem);
 	z-index: 50;
 	li {
 		display: flex;
