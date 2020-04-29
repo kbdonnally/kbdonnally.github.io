@@ -1,8 +1,10 @@
 ---
 title: Site Map
-layout: new default
+layout: new-default
 permalink: /sitemap/
 ---
+
+<main class="site-map" markdown="1">
 
 # Site map
 
@@ -12,3 +14,5 @@ permalink: /sitemap/
 - [{{ page.title }}]({{ page.url | absolute_url }})
 {% endif %}
 {% endfor %}
+
+</main>
