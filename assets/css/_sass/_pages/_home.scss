@@ -360,7 +360,7 @@
 // From 'New About' page:
 
 .home__contact {
-
+	margin-top: 3rem;
 }
 
 .home-contact__title {
@@ -391,7 +391,7 @@
 
 .home__contact {
 	width: 83.33%;
-	margin: 0 auto;
+	margin: 2rem auto;
 	margin-bottom: 1.5rem;
 	font-family: $montserrat;
 	font-weight: 900;
@@ -422,6 +422,7 @@
 	padding: 2rem;
 	border-top: 4px solid $jet;
 	border-bottom: 4px solid $jet;
+	margin-bottom: 3rem;
 }
 
 .home-contact__flex-wrapper {
