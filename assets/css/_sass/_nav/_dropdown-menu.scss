@@ -161,6 +161,7 @@ ul.dropdown {
 	margin: 0;
 	padding: 0;
 	transform: translateX(2rem) translateY(-1rem);
+	z-index: 50;
 	li {
 		display: flex;
 	//	align-items: center;
