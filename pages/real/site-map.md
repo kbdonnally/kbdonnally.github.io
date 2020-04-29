@@ -1,6 +1,6 @@
 ---
 title: Site Map
-layout: default
+layout: new default
 permalink: /sitemap/
 ---
 
