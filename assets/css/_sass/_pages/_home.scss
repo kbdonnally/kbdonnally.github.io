@@ -1,122 +1,491 @@
 /* New Home Styles: */
 
-// Section 0: Wrapper
-
-.home-wrapper {
-	grid-area: main;
-	position: relative;
+.home {
+	a {
+		color: $jet;
+		transition: color .2s;
+		&:hover, &:focus {
+		//	color: $isabelline;
+			border-bottom: 0 solid $jet;
+		}
+	}
+	h2, h3 {
+		font-family: $acier-bat-gris;
+		font-weight: 400;
+		transition: font-weight .3s;
+		a {
+			&:hover, &:focus {
+				font-family: $acier-bat-solid;
+			}
+		}
+	}
+	max-width: 100vw;
 }
 
-.home-main-content {
+.home__page-1 {
+	min-height: 100vh;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
+}
+
+.home-1__content-wrapper {
 	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+//	margin-top: 56px;
+
+}
+
+.home-1__text-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 3rem;
+	border-top: 4px solid $jet;
+	border-bottom: 4px solid $jet;
+
+	@media screen and (max-width: 500px) {
+		margin: 1rem;
+	}
+	@media screen and (min-width: 768px) {
+		padding: 3rem 4rem;
+	}
+}
+
+.home-1__page-title {
+	align-self: flex-start;
+	font-size: 3rem;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
+	border-width: 0;
+	color: $jet;
+	white-space: nowrap;
+	@media screen and (min-width: 600px) {
+		font-size: 3rem;
+		span {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+		
+	}
+	@media screen and (min-width: 1200px) {
+		align-self: center;
+		font-size: 5rem;
+	}
+}
+
+.home-1__subtitle {
+	align-self: flex-start;
+	font-size: 2rem;
+	margin: 0;
+//	color: $mylavender;
+	white-space: nowrap;
+	@media screen and (min-width: 600px) {
+		font-size: 2.5rem;
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 3rem;
+		span {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		align-self: center;
+		font-size: 3.5rem;
+		
+	}
+}
+
+/* ///////////// Page 2: ////////////// */
+
+.home__page-2 {
 	display: grid;
-	grid-template-areas: 'name'
-						 'subhed'
-						 'info';
-	grid-template-columns: 1fr;
-	padding: 1.5rem 4.167%;
-
+	grid-template-rows: repeat(3, minmax(33.33vh, auto));
+	grid-template-areas: 'portfolio'
+						 'blog'
+						 'intake';
+	min-height: 100vh;
+	font-family: $acier-bat-gris;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $jet;
+	border-top: 4px solid $jet;
+	border-bottom: 4px solid $jet;
+	h2 {
+		font-size: 3rem;	
+		font-weight: 400;
+		a {
+			font-weight: 400;
+		}
+	}
+	h3 {
+		font-size: 2.25rem;
+		font-family: $acier-bat-gris; // $futura-bold;
+		font-weight: 400;
+		a {
+			font-weight: 400;
+		}
+	}
+	h4 {
+		font-family: $montserrat;
+		font-weight: 400;
+		font-style: italic;
+	}
+	@media screen and (max-width: 600px) {
+		
+		border-right: 4px solid $jet;
+	}
+	@media screen and (min-width: 768px) {
+		grid-template-areas: 'portfolio blog'
+							 'portfolio blog'
+							 'intake blog';
+		grid-template-columns: 1fr 1fr;
+		h2 {
+			font-size: 4rem;	
+		}
+		h3 {
+			font-size: 2.5rem;
+		}
+	}
 }
 
-// Section 1: Name
-
-.home__name {
-	grid-area: name;
-	position: relative;
-	h1 {
-		line-height: 1;
-		margin: .25em 0;
-		padding-bottom: .0625em;
-		font-size: 2.25rem;
-		font-family: 'Oswald', sans-serif;
-		font-weight: 700;
-		text-transform: uppercase;
-		border-bottom: 2px solid $grayblue--light;
+.home-2__portfolio {
+	grid-area: portfolio;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	font-family: $montserrat;
+	font-weight: 900;
+	
+	background-color: $mylavender;
+	a {
+		font-weight: 900;
 	}
 	@media screen and (min-width: 600px) {
-		h1 {
-			font-size: 2.75rem;
-		}
+		border-right: 4px solid $jet;
+		border-left: 4px solid $jet;
 	}
-	@media screen and (min-width: 768px) {
-		h1 {
-			font-size: 3.5rem;
-		}
+	@media screen and (max-width: 768px) {
+	//	border-top: 4px solid $jet;
+		border-left: 4px solid $jet;
 	}
-}
-
-// Section 2: Subheds
-
-.home__subhed {
-	grid-area: subhed;
-	position: relative;
-	display: grid;
-	grid-template-areas: 'one'
-						 'two'
-						 'three';
-	@media screen and (min-width: 768px) {
-		grid-template-areas: 'one one one one ...'
-							 '... two two two two'
-							 'three three three three three';
-	}
-
-}
-
-// div
-[class*='home-subhed__'] {
-	h2 {
+	* {
 		margin: .5rem;
-		margin-left: 0;
-		@media screen and (max-width: 600px) {
-			font-size: 1.25rem;
+	}
+}
+
+.home-portfolio__title {
+	font-family: $montserrat;
+	font-weight: 900;
+	a {
+		color: $jet;
+		padding: 1rem;
+	//	transition: border-width .2s;
+		&:hover, &:focus {
+	//		border: 2px solid $jet;
 		}
 	}
 }
 
-.home-subhed__one {
-	grid-area: one;
-	color: $medgray;
-}
-
-.home-subhed__two {
-	grid-area: two;
-	color: $medgray;
-}
-
-.home-subhed__three {
-	grid-area: three;
-	color: $darkgray;
-	display: none;
-}
-
-
-// Section 3: Information
-
-.home__info {
-	grid-area: info;
+.home-portfolio__subtitle {
 
 }
 
-.home-info__hire-me {
+.home-portfolio__subhed {
+	text-align: center;
+}
+
+.home-2__blog {
+	grid-area: blog;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 'blog blog'
+						 'politics tech';
+	justify-content: center;
+	font-family: $acier-bat-gris;
+	font-weight: 900;
+	h2, h4 {
+		margin: .5rem;
+	}
+	a {
+		font-weight: 900;
+	}
+	@media screen and (max-width: 600px) {
+		min-height: 67vh;
+		border-top: 4px solid $jet;
+	}
+	@media screen and (max-width: 768px) {
+		border-top: 4px solid $jet;
+		border-left: 4px solid $jet;
+	}
+	@media screen and (min-width: 600px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 2fr;
+		grid-template-areas: 'blog blog'
+						 	 'tech politics';
+		height: 100vh;
+		text-align: center;
+	}
+}
+
+.home-blog__title-wrapper {
+	grid-area: blog;
+	min-height: 25vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: $khaki;
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+		border-right: 4px solid $jet;
+	}
+}
+
+.home-blog__title {
 
 }
 
-.home-info__title {
-	h2 {
+.home-blog__tech {
+	grid-area: tech;
+	min-height: 25vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+	background-color: $fuchsia;
+	border-top: 4px solid $jet;
+	@media screen and (max-width: 599px) {
+		border-left: 4px solid $jet;
+	}
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+		padding: 0 2rem;
+		border-right: 4px solid $jet;
+	}
+}
+
+.home-blog__tech-title {
+//	font-family: $futura;
+}
+
+.home-blog__tech-subhed {
+	@media screen and (max-width: 600px) {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.home-blog__politics {
+	grid-area: politics;
+	min-height: 25vh;
+	padding: 0 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: $robinsegg; // $rose-quartz;
+	border-top: 4px solid $jet;
+
+	@media screen and (min-width: 600px) {
+		height: 50vh;
+		padding: 0 2rem;
+		border-right: 4px solid $jet;
+	}
+}
+
+.home-blog__politics-title {
+
+}
+
+.home-blog__politics-subhed {
+	@media screen and (min-width: 425px) {
 		span {
-			color: $grayblue;
+			display: none;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+.home-2__intake {
+	grid-area: intake;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsla(169, 62%, 72%, 1);
+	border-top: 4px solid $jet;
+	border-right: 0px solid $jet;
+	@media screen and (max-width: 600px) {
+		border-left: 4px solid $jet;
+	}
+	@media screen and (min-width: 600px) {
+		border-top: 4px solid $jet;
+		border-right: 4px solid $jet;
+		border-left: 4px solid $jet;
+	}
+}
+
+.home-intake__title-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	
+	* {
+		margin: .5rem;
+	}
+}
+
+
+/* Page 3 */
+
+.home__page-3 {
+ // filled with the 'na' content
+}
+
+// From 'New About' page:
+
+.home__contact {
+
+}
+
+.home-contact__title {
+
+}
+
+.home-contact__content {
+
+}
+
+.home-contact__row {
+
+}
+
+.home-contact__svg {
+
+}
+
+.home-contact__type {
+
+}
+
+.home-contact__user {
+
+}
+
+// Contact //
+
+.home__contact {
+	width: 83.33%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	font-family: $montserrat;
+	font-weight: 900;
+	@media screen and (max-width: 425px) {
+		width: 91.67%;
+	}
+	@media screen and (min-width: 1440px) {
+	//	max-width: 75%;
+	}
+}
+
+.home-contact__title {
+// covered above
+	font-size: 3rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	@media screen and (min-width: 768px) {
+		font-size: 4rem;
+	}
+}
+
+.home-contact__content {
+	display: flex;
+//	flex-flow: column nowrap;
+	justify-content: center;
+//	align-items: center;
+	padding: 2rem;
+	border-top: 4px solid $jet;
+	border-bottom: 4px solid $jet;
+}
+
+.home-contact__flex-wrapper {
+
+}
+
+// ul
+.home-contact__row {
+	position: relative;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.home-contact__svg {
+	display: flex;
+	align-items: center;
+	padding-right: 1.5rem;
+	img {
+		height: 2rem;
+	}
+	@media screen and (min-width: 1440px) {
+		img {
+			height: 39px;
 		}
 	}
 }
 
-.home-info__list {
-
+.home-contact__type {
+	width: 5.5rem;
+	font-family: $futura-bold;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.4;
+	@media screen and (max-width: 425px) {
+		width: 5rem;
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		width: 6.5rem;
+		font-size: 24px;
+	}
 }
 
-.home-info__portfolio {
-
-}
-
-.home-info__learn {
-
+.home-contact__user {
+	font-family: $futura;
+	font-size: 20px;
+	line-height: 1.4;
+	a {
+		font-weight: 400;
+		color: $jet;
+		border-bottom: 2px solid $mylavender;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			color: $jet;
+			background-color: $mylavender;
+		}
+	}
+	@media screen and (max-width: 425px) {
+		font-size: 18px;
+	}
+	@media screen and (min-width: 1440px) {
+		font-size: 24px;
+	}
 }
