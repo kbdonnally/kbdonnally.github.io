@@ -2,8 +2,10 @@
 <html lang="en">
 {% include head.html %}
 <body>
-	{% include new-menu.html %}
-    {{ content }}
+	{% include dropdown-menu.html %}
+	<main class="body__main-content-wrapper">
+	    {{ content }}
+	</main>
     {% include new-footer.html %}
     <script src="{{ 'assets/js/hammer.min.js' | relative_url }}"></script>
     <script src="{{ 'assets/js/main.js' | relative_url }}"></script>

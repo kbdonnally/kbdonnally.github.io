@@ -4,28 +4,31 @@ permalink: /new-home/
 layout: no-style-2
 ---
 
+{% include dropdown-menu.html %}
+
 <main class="home">
 	
 	<section class="home__page-1">
 		<div class="home-1__content-wrapper">
 			<div class="home-1__text-wrapper">
-				<h1 class="home-1__page-title"><span>Katherine Donnally</span></h1>
-				<h2 class="home-1__subtitle"><span>Designer & Ecosocialist</span></h2>
+				<h1 class="home-1__page-title">Katherine<span><br/></span> Donnally</h1>
+				<h2 class="home-1__subtitle">Designer &<span><br/></span> Ecosocialist</h2>
 			</div>
 		</div>
 	</section>
-
+	
 	<section class="home__page-2">
 		<!-- portfolio -->
 		<article class="home-2__portfolio">
 			<h2 class="home-portfolio__title"><a href="{{ '/portfolio' | relative_url}}">Portfolio</a></h2>
-			<h3 class="home-portfolio__subtitle">View all projects</h3>
+			<h4 class="home-portfolio__subhed">A smattering of projects & experiments to explore.</h4>
 		</article>
 
 		<!-- blog -->
 		<article class="home-2__blog">
 			<div class="home-blog__title-wrapper">
 				<h2 class="home-blog__title"><a href="{{ '/blog' | relative_url}}">Blog</a></h2>
+				<h4 class="home-blog__subhed">See below for more specific topics.</h4>
 			</div>
 			<section class="home-blog__tech">
 				<h3 class="home-blog__tech-title"><a href="#">Tech</a></h3>
@@ -33,8 +36,15 @@ layout: no-style-2
 			</section>
 			<section class="home-blog__politics">
 				<h3 class="home-blog__politics-title"><a href="#">Politics</a></h3>
-				<h4 class="home-blog__politics-subhed">Commentary & Analysis</h4>
+				<h4 class="home-blog__politics-subhed">Commentary & Analysis<br/><br/><span><br/></span></h4>
 			</section>
+		</article>
+
+		<article class="home-2__intake">
+			<div class="home-intake__title-wrapper">
+				<h2 class="home-intake__title"><a href="{{ '/intake' | relative_url}}">Intake</a></h2>
+				<h4 class="home-blog__intake-subhed">Need a web designer? Hire me!</h4>
+			</div>
 		</article>
 	</section>
 
