@@ -2,69 +2,64 @@
 layout: new-default
 ---
 
-<main class="new-home-wrapper">
-	<!-- first page of content -->
-	<main class="nh__page1">
-		<main class="nh-p1__content-wrapper">
-			<h1 class="nh-p1__name">Katherine Donnally</h1>
-			<h1 class="nh-p1__title">Web Designer</h1>
-			<h2 class="nh-p1__text">Based in Alexandria, Virginia.</h2>
-		</main>
-	</main>
+<main class="home">
+	
+	<section class="home__page-1">
+		<div class="home-1__content-wrapper">
+			<div class="home-1__text-wrapper">
+				<h1 class="home-1__page-title">Katherine<span><br/></span> Donnally</h1>
+				<h2 class="home-1__subtitle">Designer &<span><br/></span> Ecosocialist</h2>
+			</div>
+		</div>
+	</section>
+	
+	<section class="home__page-2">
+		<!-- portfolio -->
+		<article class="home-2__portfolio">
+			<h2 class="home-portfolio__title"><a href="{{ '/portfolio' | relative_url}}">Portfolio</a></h2>
+			<h4 class="home-portfolio__subhed">A smattering of projects & experiments to explore.</h4>
+		</article>
 
-	<!-- second page of content -->
-	<main class="nh__page2">
-		<h1 class="nh-p2__title">Which best describes you?</h1>
-		<article class="nh-p2__options">
-			<section class="nh-options__option-1">
-				<h3 class="nh-options__text">I'm looking for<span><br/></span> a whole new<span><br/></span> website.</h3>
+		<!-- blog -->
+		<article class="home-2__blog">
+			<div class="home-blog__title-wrapper">
+				<h2 class="home-blog__title"><a href="{{ '/blog' | relative_url}}">Blog</a></h2>
+				<h4 class="home-blog__subhed">See below for more specific topics.</h4>
+			</div>
+			<section class="home-blog__tech">
+				<h3 class="home-blog__tech-title"><a href="#">Tech</a></h3>
+				<h4 class="home-blog__tech-subhed">Fun with CSS, JavaScript, HTML, & Python</h4>
 			</section>
-			<section class="nh-options__option-2">
-				<h3 class="nh-options__text">I'm looking to<span><br/></span> spiff up my existing website.</h3>
-			</section>
-			<section class="nh-options__option-3">
-				<h3 class="nh-options__text">I'm not sure yet!</h3>
+			<section class="home-blog__politics">
+				<h3 class="home-blog__politics-title"><a href="#">Politics</a></h3>
+				<h4 class="home-blog__politics-subhed">Commentary & Analysis<br/><br/><span><br/></span></h4>
 			</section>
 		</article>
-	</main>
 
-	<!-- third page of content -->
-	<main class="nh__page3">
-		<main class="nh-p3__content-wrapper">
-			<h1 class="nh-p3__title">In that case,</h1>
-			<article class="nh-p3__text--1">
-				<p>Great! If you know the details about what you want your website to be like (e.g., your URL, the content you want in it, maybe some ideas about style) and your logistical guidelines (e.g., approximate budget, ideal finished-by date), you're ready to fill out the <a href="{{ '/intake' | relative_url }}">New Project Intake Form</a> to get started.</p>
-				<p>If you find that you're unsure about a lot of the questions being asked on the form&mdash;no problem. Instead, email me at <a href="mailto:kbdonnally@gmail.com">kbdonnally@gmail.com</a> with a rough overview of your needs, and we'll figure out what you want your website to be together.</p>
-			</article>
-			<article class="nh-p3__text--2 nh-p3__text--hide">
-				<p>Great! If you know the details about what you want the changes to your website to be like (e.g., pages you want changed, ideas on new style direction) and your logistical guidelines (e.g., approximate budget, ideal finished-by date), you're ready to fill out the <a href="{{ '/intake' | relative_url }}">New Project Intake Form</a> to get started.</p>
-				<p>If you find that you're unsure about a lot of the questions being asked on the form&mdash;no problem. Instead, email me at <a href="mailto:kbdonnally@gmail.com">kbdonnally@gmail.com</a> with a rough overview of your needs, and we'll figure out how you'd like to change your website together.</p>
-			</article>
-			<article class="nh-p3__text--3 nh-p3__text--hide">
-				<p>Not a problem at all! If you have a project in mind that you're thinking about, consider taking a look at the <a href="{{ '/intake' | relative_url }}">New Project Intake Form</a> to see if you feel comfortable answering the questions. If so, great! If not, don't hesitate to email me at <a href="mailto:kbdonnally@gmail.com">kbdonnally@gmail.com</a> with a general idea of your project, so that we can work out a plan of how to move forward together.</p>
-				<p>Otherwise, if you are just a wayward visitor from the World Wide Web, welcome! I invite you to check out my <a href="{{ '/portfolio' | relative_url }}">Portfolio</a> and my <a href="{{ '/blog' | relative_url }}">Blog</a>, and I hope you enjoy your time on this random designer's website.</p>
-			</article>
-		</main>
-	</main>
+		<article class="home-2__intake">
+			<div class="home-intake__title-wrapper">
+				<h2 class="home-intake__title"><a href="{{ '/intake' | relative_url}}">Intake</a></h2>
+				<h4 class="home-blog__intake-subhed">Need a web designer? Hire me!</h4>
+			</div>
+		</article>
+	</section>
 
-	<!-- fourth page of content -->
-	<main class="nh__page4">
-		<div class="nh-p4__line--short"></div>
-		<div class="nh-p4__line--long"></div>
-		<h1 class="nh-p4__link"><a href="{{ '/portfolio' | relative_url }}">Portfolio</a></h1>
-		<div class="nh-p4__line--long"></div>
-		<div class="nh-p4__line--short"></div>
-		<div class="nh-p4__line--long"></div>
-		<h1 class="nh-p4__link"><a href="{{ '/about' | relative_url }}">About</a></h1>
-		<div class="nh-p4__line--long"></div>
-		<div class="nh-p4__line--short"></div>
-		<div class="nh-p4__line--long"></div>
-		<h1 class="nh-p4__link"><a href="{{ '/blog' | relative_url }}">Blog</a></h1>
-		<div class="nh-p4__line--long"></div>
-		<div class="nh-p4__line--short"></div>
-		<div class="nh-p4__line--long"></div>
-		<h1 class="nh-p4__link"><a href="{{ '/intake' | relative_url }}">Intake</a></h1>
-		<div class="nh-p4__line--long"></div>
-		<div class="nh-p4__line--short"></div>
-	</main>
+	<section class="home__page-3">
+		<section class="home__contact">
+			<h2 class="home-contact__title">Contact</h2>
+			<article class="home-contact__content">
+				<div class="home-contact__flex-wrapper">
+				{% assign contacts = site.data.contact | sort: 'order' %}
+				{% for contact in contacts %}
+				<ul class="home-contact__row">
+					<li class="home-contact__svg"><img alt="{{ contact.type }}" title="{{ contact.type }}" src="{{ contact.img | relative_url }}"></li>
+					<li class="home-contact__type">{{ contact.type }}:</li>
+					<li class="home-contact__user"><a href="{{ contact.url }}">{{ contact.username }}</a></li>
+				</ul>
+				{% endfor %}
+				</div>
+			</article>
+		</section>
+	</section>
+
 </main>
