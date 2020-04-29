@@ -33,6 +33,7 @@
 			display: block;
 			font-family: $futura-bold;
 			font-size: 28px;
+		//	text-align: center;
 			a {
 				color: black;
 				border-bottom: 1px solid $jet;
@@ -51,6 +52,9 @@
 				background-color: $midbluegreen;
 				transform: translateX(-14px) translateY(-50%);
 				border-radius: 50%;
+			}
+			@media screen and (max-width: 768px) {
+				font-size: 20px;
 			}
 		}
 	}
