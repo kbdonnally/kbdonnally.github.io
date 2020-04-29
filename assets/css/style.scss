@@ -26,6 +26,7 @@
 @import '_layouts/general';
 
 // nav:
+@import '_nav/dropdown-menu';
 @import '_nav/footer';
 @import '_nav/new-footer';
 @import '_nav/new-menu';
@@ -37,7 +38,6 @@
 @import '_pages/about';
 @import '_pages/blog';
 @import '_pages/contact';
-@import '_pages/dropdown';
 @import '_pages/hire-me';
 @import '_pages/home';
 @import '_pages/intake';
