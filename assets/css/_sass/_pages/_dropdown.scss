@@ -45,14 +45,6 @@ ul li ul  {
 	right: 0;
 }
 
-ul.dropdown {
-	margin: 0;
-	padding: 0;
-	li {
-		width: 97.64px;
-	}
-}
-
 li.dropdown-wrapper {
 	text-align: right;
 }
@@ -159,10 +151,30 @@ ul {
 	} */
 }
 
-.dropdown {
+
+ul.dropdown {
 	position: absolute;
 	right: 0;
-//	margin-top: 24px;
+	margin: 0;
+	padding: 0;
+	transform: translateX(-2rem) translateY(-1rem);
+	li {
+		display: flex;
+	//	align-items: center;
+		width: 97.64px;
+		height: 40px;
+		padding: .5rem 1rem;
+		line-height: 40px;
+		background-color: black;
+		border-top: 1px solid $medgray;
+		a {
+			transform: translateY(-.5rem);
+			color: white;
+			&:last-of-type {
+				padding-bottom: .5rem;
+			}
+		}
+	}
 	background-color: black;
 }
 
