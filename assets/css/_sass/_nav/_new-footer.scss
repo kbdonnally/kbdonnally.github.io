@@ -78,7 +78,7 @@
 }
 
 .new-footer__link {
-	padding: 0 1rem;
+	padding: 0 .5rem;
 	a {
 		color: $mylavender;
 		&:hover, &:focus {
@@ -88,5 +88,8 @@
 	}
 	@media screen and (max-width: 374px) {
 		font-size: 1.125rem;
+	}
+	@media screen and (min-width: 425px) {
+		padding: 0 1rem;
 	}
 }
