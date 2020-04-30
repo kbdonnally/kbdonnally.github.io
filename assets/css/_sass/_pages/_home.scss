@@ -104,6 +104,19 @@
 	}
 }
 
+.home-1__arrow {
+	position: relative;
+	height: 72px;
+	display: block;
+	margin-top: 3rem;
+	svg {
+		height: 100%;
+	}
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
+}
+
 /* ///////////// Page 2: ////////////// */
 
 .home__page-2 {
