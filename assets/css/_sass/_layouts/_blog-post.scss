@@ -154,7 +154,7 @@
 		padding-left: 1.25em;
 		list-style: none;
 		counter-reset: ol-counter;
-		li {
+		> li {
 			position: relative;
 		//	font-size: 20px;
 			counter-increment: ol-counter;
