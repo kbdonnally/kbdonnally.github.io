@@ -126,8 +126,8 @@
 	display: grid;
 	grid-template-rows: repeat(3, minmax(33.33vh, auto));
 	grid-template-areas: 'portfolio'
-						 'blog'
-						 'intake';
+						 'intake'
+						 'blog';
 	min-height: 100vh;
 	font-family: $acier-bat-gris;
 	font-weight: 400;
