@@ -15,5 +15,10 @@ Topics, which will display as links once they've been written about:
 	- Ditto, and may actually meld into #1 for a longer piece
 3. Surplus-value
 	- Need labor theory of value behind it, as well as the concept of capitalist exploitation of workers, to understand this as an exact measure of exploitation (*not* profit!).
-	- Absolute & relative surplus-value
+	- Rate of surplus-value
+	- Absolute and relative surplus-value
 4. Variable and constant capital
+5. Fixed and circulating capital
+6. Circuit of capital
+7. Aggregate circuit of capital
+	- End of Book II, can't recall the term
