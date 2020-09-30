@@ -11,7 +11,7 @@ It's incredibly tedious to manually copy over CSS class names, ID names, and oth
 
 ## Part 1: Regular Expressions
 
-First, we open a file, then use a regular expression to look inside that file for all instances of the string `"class="`
+First, we open a file, then use a regular expression to look inside that file for all instances of the string "`class=`".
 
 ```python
 # using regex to search and grab
