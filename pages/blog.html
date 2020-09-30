@@ -22,7 +22,7 @@ order: 4
 
 <main class="blog__post-list">
 	{% for post in site.posts %}
-	<article class="blog-posts__post post-cat__{{ post.categories[0] }}"">
+	<article class="blog-posts__post post-cat__{{ post.categories[0] }}">
 		<h2 class="blog-post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		<h4 class="blog-post__meta">Posted {{ post.date | date: "%b. %-d, %Y"}} <span><br/></span>// tags:
 			<ul class="post-meta__tags">
