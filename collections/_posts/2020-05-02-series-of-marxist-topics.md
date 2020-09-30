@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Series: Explaining Marxist Topics"
-categories: [marxism]
+categories: [politics]
 date: 2020-05-02
 ---
 

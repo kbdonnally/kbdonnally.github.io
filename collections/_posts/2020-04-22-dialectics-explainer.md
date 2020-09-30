@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Introduction to Dialectics
-categories: [philosophy, socialism]
+categories: [politics]
 date: 2020-04-20
 ---
 

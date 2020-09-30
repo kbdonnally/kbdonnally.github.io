@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling text, from start to finish
-categories: [meta, design]
+categories: [technology]
 date: 2019-08-25
 ---
 
