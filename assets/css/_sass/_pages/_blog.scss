@@ -58,6 +58,43 @@
 	}
 }
 
+// Buttons //
+
+.blog__categories {
+	display: flex;
+//	justify-content: space-around;
+	width: 83.33%;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+	@media screen and (min-width: 1440px) {
+		max-width: 1000px;
+	}
+}
+
+[class*="blog-cats__"] {
+	margin-right: 1em;
+	padding: .25em 1em;
+	font-family: $futura-bold;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	background-color: white;
+	border: 2px solid black;
+	cursor: pointer;
+	transition: background-color .3s;
+	&:hover, &:focus {
+		background-color: $mylavender;
+	}
+}
+
+.blog-cats__tech {
+
+}
+
+.blog-cats__politics {
+	
+}
+
 // List //
 
 // main
