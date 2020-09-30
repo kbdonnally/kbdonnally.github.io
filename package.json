@@ -21,8 +21,8 @@
     "gulp-responsive": "^2.14.0"
   },
   "dependencies": {
-    "postcss": "^7.0.27",
-    "stylelint": "^13.3.3",
+    "postcss": "^7.0.35",
+    "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0"
   }
 }
