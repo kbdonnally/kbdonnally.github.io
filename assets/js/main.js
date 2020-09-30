@@ -87,9 +87,33 @@ if (document.querySelector('.menu-wrapper')) {
 	}
 }
 
-/*
+/* ------------------------------------------------- */
 
-Method:
-1. declare all variables:
+// blog categories
 
-*/
+if (document.querySelector('.blog-wrapper')) {
+	let tech 	 = document.querySelector('.blog-cats__tech');
+	let politics = document.querySelector('.blog-cats__politics');
+
+	tech.addEventListener('click', toggleCategories);
+	politics.addEventListener('click', toggleCategories);
+
+	function toggleCategories(e) {
+		if (e.target.classList.contains('blog-cats__tech')) {
+			let politicsPosts = document.querySelectorAll('.post-cat__politics');
+			let classes 	  = politicsPosts.classList;
+
+			for (const post of politicsPosts) {
+				post.classList.toggle('blog-hide');
+			}
+		}
+		if (e.target.classList.contains('blog-cats__politics')) {
+			let techPosts 	  = document.querySelectorAll('.post-cat__technology');
+			let classes 	  = techPosts.classList;
+
+			for (const post of techPosts) {
+				post.classList.toggle('blog-hide');
+			}
+		}
+	}
+}
