@@ -99,20 +99,24 @@ if (document.querySelector('.blog-wrapper')) {
 	politics.addEventListener('click', toggleCategories);
 
 	function toggleCategories(e) {
-		if (e.target.classList.contains('blog-cats__tech')) {
-			let politicsPosts = document.querySelectorAll('.post-cat__politics');
-			let classes 	  = politicsPosts.classList;
+		let politicsPosts = document.querySelectorAll('.post-cat__politics');
+		let techPosts 	  = document.querySelectorAll('.post-cat__technology');
 
-			for (const post of politicsPosts) {
-				post.classList.toggle('blog-hide');
+		if (e.target.classList.contains('blog-cats__tech')) {
+			for (let post of techPosts) {
+				post.classList.remove('blog-hide');
+			}
+			for (var post of politicsPosts) {
+				post.classList.add('blog-hide');
 			}
 		}
 		if (e.target.classList.contains('blog-cats__politics')) {
-			let techPosts 	  = document.querySelectorAll('.post-cat__technology');
-			let classes 	  = techPosts.classList;
+			for (let post of politicsPosts) {
+				post.classList.remove('blog-hide')
+			}
 
-			for (const post of techPosts) {
-				post.classList.toggle('blog-hide');
+			for (var post of techPosts) {
+				post.classList.add('blog-hide');
 			}
 		}
 	}
