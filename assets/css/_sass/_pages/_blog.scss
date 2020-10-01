@@ -66,7 +66,7 @@
 
 .blog__categories {
 	display: flex;
-//	justify-content: center;
+	flex-flow: row wrap;
 	width: 83.33%;
 	max-width: 900px;
 	margin: 0 auto;
@@ -78,9 +78,10 @@
 
 [class*="blog-cats__"] {
 	margin-right: 1em;
+	margin-bottom: .5em;
 	padding: .25em 1em;
 	font-family: $futura-bold;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	text-transform: uppercase;
 	background-color: white;
 	border: 2px solid black;
@@ -88,6 +89,9 @@
 	transition: background-color .3s;
 	&:hover, &:focus {
 		background-color: $mylavender;
+	}
+	@media screen and (min-width: 600px) {
+		font-size: 1.5rem;
 	}
 }
 
