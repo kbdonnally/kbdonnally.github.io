@@ -5,11 +5,11 @@ categories: [politics]
 date: 2020-10-01
 ---
 
-## Why Does Surplus-Value Matter?
+## What is surplus-value?
 
-## What Is Surplus-Value?
+## Why does it matter?
 
-## How does surplus-vaue relate to profits?
+## How does surplus-value relate to profits?
 
 ## Why does it exist?
 
