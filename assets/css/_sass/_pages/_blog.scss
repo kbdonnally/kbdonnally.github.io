@@ -1,5 +1,9 @@
 /* Blog: */
 
+.blog-wrapper {
+	margin-bottom: 3em;
+}
+
 // Title //
 
 .blog__title {
@@ -62,7 +66,7 @@
 
 .blog__categories {
 	display: flex;
-//	justify-content: space-around;
+//	justify-content: center;
 	width: 83.33%;
 	max-width: 900px;
 	margin: 0 auto;
