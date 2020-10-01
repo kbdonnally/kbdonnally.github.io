@@ -9,10 +9,9 @@
 	li {
 	display: block;
 	transition-duration: .5s;
-	}
-
-	li:hover { 
-		cursor: pointer
+	&:hover { 
+			cursor: pointer;
+		}
 	}
 }
 
@@ -189,10 +188,13 @@ ul.dropdown {
 
 li.dropdown-home {
 	position: relative;
-	height: 40px;
+	height: 28px;
 	display: block;
 	background-color: black;
 	a {
 		color: white;
+		svg {
+			height: 28px;
+		}
 	}
 }
