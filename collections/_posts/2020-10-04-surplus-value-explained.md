@@ -2,7 +2,7 @@
 layout: post
 title: Surplus-Value, Explained
 categories: [politics]
-date: 2020-10-01
+date: 2020-10-04
 ---
 
 ## What is surplus-value?
