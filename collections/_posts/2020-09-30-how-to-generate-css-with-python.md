@@ -2,7 +2,7 @@
 layout: post
 title: "How to Generate CSS with Python"
 categories: [technology]
-date: 2020-05-02
+date: 2020-09-30
 ---
 
 It's incredibly tedious to manually copy over CSS class names, ID names, and other selectors from your HTML to your CSS stylesheet. This is both time-consuming and subject to human error. So, I wrote a script to automatically generate all of that.
