@@ -29,7 +29,7 @@ The vast majority of individuals are separated from the means of production, whi
 
 ## How can we be active in reducing it?
 
-Under a socialist economy, we would still produce a surplus as compared to the needs of actual workers. However, the *allocation* of that surplus will look vastly different in a sociaist economy. As a reminder, the surplus in a capitalist economy goes toward:
+Under a socialist economy, we would still produce a surplus as compared to the needs of actual workers. However, the *allocation* of that surplus will look vastly different in a socialist economy. As a reminder, the surplus in a capitalist economy goes toward:
 
 1. Interest payments (finance capital)
 2. Rent payments (landlords)
@@ -41,4 +41,3 @@ Whereas under a socially planned economy, the allocation of surplus would roughl
 2. An extra stockpile in case of disaster or other emergencies.
 
 And since the goal of a socialist economy is not explicitly to produce more surplus-value, the surplus will be lower, and production of the surplus in these applications will be accomplished in far, far, fewer working hours than what we deal with today.
-
